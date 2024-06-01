@@ -1,0 +1,73 @@
+"use client";
+import * as React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import {  group, CardEnvelope, CardWhats, CardPhone, userCard, rulerCard } from "../assets";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+export default function MainCard(props) {
+  const settings = {
+    className: "center",
+    dots: true,
+    arrows: false,
+    swipeToSlide: true,
+    speed: 500,
+    slidesToShow: 1,
+    infinite: true,
+  };
+  const [clicked, setClicked] = React.useState(false);
+  const handleClick=(props)=> {
+    setClicked(!clicked)
+  }
+  return (
+    <div className="card-swiper">
+      <Link href={`${props.link}`}>
+      <div className="gallery">
+          <Image src={props.mainImg} alt=""/>
+      </div>
+      <div className="text">
+        <div className="box1">
+          <h2><strong>{props.name}</strong></h2>
+          <FontAwesomeIcon icon={faHeart} onClick={handleClick} className={`${clicked? "red" : ""}`}/>
+          <span>Click to save</span>
+        </div>
+        <div className="box2">
+            <div className="nested-box1">
+                <Image src={userCard} alt=""/>
+                <span>{props.person}</span>
+                persons
+                <span className="line-right"></span>
+            </div>
+            <div className="nested-box2">
+                <Image src={rulerCard} alt=""/>
+                size
+                <span className="line-right"></span>                
+            </div>
+          <Image src={group} alt=""/>
+          <p><span>{props.rooms}</span>Bedroom</p>
+        </div>
+        <div className="box3">
+          <p><strong>{props.price}</strong></p>
+        </div>
+      </div>
+      </Link>
+      <div className="actions">
+        <Link  href="https://poseidonyachtsdubai.com/yachts/80ft-majesty/"></Link>
+        <Link href={"/contact"}>
+          <Image src={CardEnvelope} alt="" width={11} height={16}/>
+          <span>Book Now</span>
+        </Link>
+        <Link href={"https://wa.me/+971545407884?text=I%20want%20to%20book%20this%20yacht%20https://poseidonyachtsdubai.com/yachts/118-ft-poseidon/"}>
+          <Image src={CardWhats} alt=""/>
+          <span>Whatsapp</span>
+        </Link>
+        <Link href={"tel:+971501489802"}>
+        <Image src={CardPhone} alt=""/>
+          <span>Call Us</span>
+        </Link>
+      </div>
+    </div>
+  );
+}

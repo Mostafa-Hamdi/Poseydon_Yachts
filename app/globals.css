@@ -1,0 +1,3386 @@
+/* @import "~bootstrap/scss/bootstrap"; */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2024/02/imageedit_1_8103806715.png.webp");
+  /* background-size: cover; */
+  /* background-position: center center; */
+  background-color: #010e1e;
+}
+ul {
+  list-style: none;
+  padding-left: 0 !important;
+}
+a {
+  text-decoration: none;
+}
+header {
+  color: white;
+  height: 111px;
+  z-index: 10000;
+  position: relative;
+  align-items: center;
+  background-color: #000811;
+}
+header .logo {
+  padding: 10px;
+  display: flex;
+  z-index: 1000;
+  margin-right: 15px;
+}
+@media (max-width: 750px) {
+  header {
+    height: 63.1px;
+    align-items: center;
+  }
+  header .logo {
+    width: 139px;
+  }
+  header .navbar-container {
+    width: calc(100% - 139px);
+    padding-right: 5px;
+  }
+  header nav {
+    margin-top: 0;
+  }
+  .space {
+    height: 322px;
+  }
+}
+@media (min-width: 768px) {
+  .space {
+    height: 320px;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    height: 111px;
+    align-items: flex-start;
+  }
+  .up-space {
+    display: none;
+  }
+  .space {
+    height: 345px;
+  }
+  .navbar-container {
+    margin-top: 22.5px !important;
+    margin-right: 5px;
+  }
+  .main-button {
+    margin-top: 28px !important;
+    position: relative !important;
+    transform: translateX(-5px) !important;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  header .logo {
+    width: 202.25px;
+  }
+}
+header .logo {
+  margin-left: 4px;
+}
+header .logo a {
+  color: #01cbec;
+}
+header .logo a img {
+  vertical-align: middle;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+.navbar-container {
+  padding: 10px;
+  margin-left: 11px;
+}
+nav ul.links {
+  z-index: 2;
+  display: flex;
+  margin-top: 10px;
+}
+nav ul.links li {
+  flex-grow: 1;
+  white-space: nowrap;
+}
+@media (min-width: 1005px) {
+  nav ul.links > li:not(:last-child) {
+    margin-right: 15px;
+  }
+  /* nav ul.links > li:not(:last-child):not(:first-child) { */
+    /* margin-right: 16px; */
+  /* } */
+    nav ul.links > li:nth-child(4),
+  nav ul.links > li:nth-child(5) {
+    margin-right: 18px;
+  }
+  nav ul.links li.item a:hover,
+  nav ul.links > li.active a  {
+  color: #01cbec !important;
+  background-color: transparent !important;
+  transition: all 0.4s;
+}
+  nav ul.links > li:nth-child(4) {
+    margin-right: 16px;
+  }
+}
+
+
+
+
+nav ul.links > li a {
+  color: white;
+  letter-spacing: 0;
+  padding: 3px 1px;
+  display: block;
+  font-weight: 600;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+nav ul.links li span {
+  padding: 10px 0 10px 10px;
+  margin: -8px 0 0 -1.2px;
+  color: white;
+  fill: white;
+}
+nav ul.links li span svg {
+  width: 16px;
+  height: 16px;
+}
+.nested-ul {
+  width: auto;
+  background-color: #ffffff80;
+  top: 100%;
+  text-align: center;
+  opacity: 0;
+  z-index: -10;
+  transition: all 0.4s;
+  position: absolute;
+  visibility: hidden;
+}
+/* .nested-ul > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000;
+} */
+.nested-ul li {
+  border-bottom: solid 2px #00000094;
+  transition: 0.4s;
+}
+.nested-ul li:last-child {
+  border: none;
+}
+header ul.links li.yachts {
+  cursor: pointer;
+  position: relative;
+}
+.nested-ul li a {
+  padding: 13px 20px !important;
+  font-size: 20px;
+  display: block;
+  font-weight: 600;
+  height: 46px;
+  width: 141.283px;
+  line-height: 20px;
+}
+.nested-ul li:hover a {
+  background-color: #01cbec;
+  transition: 0.4s;
+}
+
+@keyframes shownestedul {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+.main-button {
+  padding: 10px 10px 10px 5px;
+  z-index: 1000;
+  width: 126.617px;
+  display: flex;
+  position: relative;
+  transform: translateY(1px);
+}
+.main-button a {
+  white-space: nowrap;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 15px;
+}
+.main-button a:hover {
+  background-color: #01cbec;
+  transition: 0.3s;
+}
+.button-container a {
+  background-color: #c19e5c;
+  line-height: 1;
+  font-size: 15px;
+  width: 126.617px;
+  padding: 12px 24px;
+  letter-spacing: 0;
+  border-radius: 3px;
+  height: 39px;
+  display: inline-block;
+}
+.button-container a span {
+  letter-spacing: 0;
+}
+.toggle-menu {
+  width: auto;
+  text-align: end;
+}
+.toggle-menu svg {
+  color: white;
+  fill: white;
+  height: 22px;
+  cursor: pointer;
+  width: 22px;
+}
+.toggle-menu svg:last-of-type {
+  display: none;
+}
+@media (max-width: 767px) {
+  nav ul.links {
+    position: absolute;
+    left: 0;
+    top: 63px;
+    background-color: #ffffff80;
+    flex-direction: column;
+  }
+}
+@media (min-width: 750px) {
+  .toggle-menu {
+    width: 231px;
+    padding: 10px;
+    margin-left: 319px;
+    text-align: right;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    margin-top: 0;
+  }
+  nav ul.links {
+    position: absolute;
+    left: 0;
+    top: 91px;
+    background-color: #ffffff80;
+    flex-direction: column;
+  }
+  .navbar-container {
+    width: 70%;
+  }
+}
+@media (max-width: 1023px) {
+  nav ul.links,
+  .main-button {
+    display: none;
+  }
+  nav ul.links {
+    margin-top: 0;
+    font-size: 13px;
+  }
+  .nested-ul {
+    display: none;
+  }
+  .toggle-menu {
+    display: flex;
+  }
+  nav {
+    z-index: 1000;
+  }
+
+  nav ul.links > li {
+    padding: 10px 20px;
+    height: 43px;
+    cursor: pointer;
+  }
+  nav ul.links > li:nth-child(5),
+  nav ul.links > li:nth-child(6),
+  nav ul.links > li:nth-child(7) {
+    background-color: #c9cdce;
+    padding-left: 28px;
+  }
+  nav ul.links > li:nth-child(5):hover,
+  nav ul.links > li:nth-child(6):hover,
+  nav ul.links > li:nth-child(7):hover {
+    background-color: #c19e5c;
+  }
+  nav ul.links > li svg {
+    color: black;
+    fill: black;
+  }
+  nav ul.links li:hover,
+  nav ul.links li.active {
+    background-color: #c19e5c;
+    transition: all 0.4s;
+  }
+  nav ul.links li:hover a,
+  nav ul.links a.active  {
+    color: white;
+    transition: all 0.4s;
+  }
+  nav ul.links li:not(:last-child) {
+    border-bottom: solid 3px #000000a8;
+  }
+  .toggle-menu {
+    align-self: flex-start;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul.links,
+  .main-button {
+    display: flex;
+  }
+  header ul.links li.yachts:hover > .nested-ul {
+    animation: shownestedul 0.9s forwards;
+    visibility: visible;
+  }
+  .toggle-menu {
+    display: none;
+  }
+  .main-button,
+  .logo {
+    width: 25%;
+  }
+  .navbar-container {
+    width: 50%;
+    letter-spacing: 0;
+    z-index: 1000;
+    margin-top: 35px;
+  }
+}
+@media (min-width: 1024px) {
+  ul.links {
+    display: flex !important;
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(00, 00, 00, 0.55);
+}
+.landing {
+  background-image: url("./assets/marina-_1_-min-scaled.webp");
+  background-size: cover;
+  background-position: center center;
+  z-index: 100;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .landing {
+    margin-top: -143px;
+  }
+}
+@media (max-width: 991px) {
+  .landing-container h1 {
+    text-align: center;
+  }
+}
+.landing-container {
+  position: relative;
+}
+@media (max-width: 768px) {
+  header {
+    background-color: transparent;
+    position: relative;
+  }
+  .landing {
+    height: 723.9px;
+  }
+}
+@media (min-width: 1200px) {
+  .landing-container {
+    max-width: 1140px;
+    margin-left: calc((100% - 1140px) / 2);
+    margin-right: calc((100% - 1140px) / 2);
+  }
+}
+@media (max-width:1023px) {
+  header {
+    background-color: rgb(00, 00, 00, 0.5) !important;
+  }
+}
+@media (min-width: 1005px) {
+  .landing-container {
+    max-width: 1140px;
+    position: relative;
+    transform: translateY(-13px);
+    /* margin-left: calc((100% - 1140px) / 2); */
+    margin-right: calc((100% - 1140px) / 2);
+  }
+  header {
+    background-color: rgb(0, 13, 37, 10%);
+    position: relative;
+  }
+}
+.nested-ul a.active {
+  background-color: #01cbec !important;
+  color: white !important;
+}
+.nested-menu a {
+  height: 40px !important;
+  padding: 10px 20px 10px 28px !important;
+}
+.nested-menu  {
+  padding: 0 !important; 
+}
+.nested-menu a.active {
+  background-color: #c19e5c !important;
+  color: white !important;
+}
+.landing-container h1 {
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.012;
+}
+.landing-container p {
+  color: #ccc;
+  letter-spacing: 0;
+  line-height: 1.55;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 17px;
+  margin-bottom: 44px;
+}
+@media (max-width: 768px) {
+  .landing-container {
+    text-align: center;
+    height: 698.4px;
+  }
+  .landing-container h1 {
+    font-size: 27px;
+  }
+  .landing-container p {
+    font-size: 17px;
+    margin-top: 20px;
+  }
+}
+.landing-container a {
+  display: inline-block;
+  margin-left: 10px;
+  white-space: nowrap;
+  margin-bottom: 170px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: white;
+  background-color: #7a7a7ac2;
+  border-left: solid 3px #01cbec;
+  padding: 12px 24px;
+  height: 39px;
+  width: calc(77.633px + 51px);
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 1;
+}
+@media (max-width: 1023px) {
+  .logo,
+  .navbar-container,
+  .main-button {
+    z-index: 1000;
+    background-color: transparent;
+  }
+  header {
+    background-color: transparent;
+    max-height: 91px;
+  }
+}
+.selection-text {
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+}
+
+.selection-text span {
+  color: #01cbec;
+  font-weight: 600;
+  font-size: 20px;
+}
+.selection-text p {
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+@media (min-width: 1275px) {
+  .selection-text p {
+    padding: 0 40px;
+  }
+}
+.selection-text h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 11.5px 0 20px;
+  line-height: 1;
+}
+.standard-page .discover .container22,
+.premium-page .discover .container22,
+.luxurious-page .discover .container22 {
+  padding: 0 !important;
+}
+.standard-page .selection-text h1,
+.premium-page .selection-text h1,
+.luxurious-page .selection-text h1 {
+  margin-top: 15px !important;
+}
+@media (max-width: 767px) {
+  .selection-text h1 {
+    font-size: 20px;
+  }
+  .selection-text p {
+    font-size: 14px;
+  }
+  .standard-page .discover,
+.premium-page .discover {
+  padding-bottom: 0 !important;
+}
+}
+.skipper h1 {
+  line-height: 1.5;
+}
+.plan .container {
+  margin: 0;
+  padding: 0;
+  /* max-width: 1140px !important; */
+}
+@media (min-width:758px) {
+  .plan .container22 {
+    max-width: 1300px;
+    margin: auto;
+  }
+  .selection-text p {
+    padding: 0px;
+  }
+  .cards-container {
+    max-width: 1330px;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .discover .container,
+  .skipper .container,
+  .set-sail .container {
+    max-width: 1140px;
+    margin: auto;
+  }
+}
+.set-sail {
+  text-align: center;
+  position: relative;
+  background-image: url("./assets/set-sail.png");
+  background-size: cover;
+  background-position: center center;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+.services-page .set-sail span {
+  font-weight: 600 !important;
+  font-size: 20px !important;
+}
+.services-page .set-sail h1 {
+  font-size: 40px !important;
+}
+/* .services-page .set-sail a {
+  margin-top: 20px !important;
+} */
+.set-sail a {
+  display: inline-block;
+  font-weight: 600;
+  color: white;
+  margin: 20px auto 0;
+  background-color: #7a7a7ac2;
+  border-left: solid 3px #01cbec;
+  padding: 12px 24px;
+  width: fit-content;
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 1;
+}
+.cards-container img {
+  margin-left: -38px;
+}
+.cards-container .MuiPaper-root {
+  max-height: 588px;
+  position: relative;
+}
+.cards-container .MuiPaper-root:nth-child(1) {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2024/02/SAFFURIYA-0002-_problembo.com_-min-scaled.webp");
+  background-position: center center;
+  background-size: cover;
+}
+.cards-container .MuiPaper-root:nth-child(2) {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2024/02/lui-peng-8NxTrV6i4WQ-unsplash-1.png.webp");
+  background-position: center center;
+  background-size: cover;
+}
+.cards-container .MuiPaper-root:nth-child(3) {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2024/02/lui-peng-8NxTrV6i4WQ-unsplash-2.png.webp");
+  background-position: center center;
+  background-size: cover;
+}
+@media (max-width:768px) {
+  .cards-container .MuiPaper-root {
+    max-height: 405px !important;
+  }
+  .cards-container .wrapper {
+    position: relative !important;
+    margin: 267px auto auto;
+  }
+}
+.cards-container {
+  display: grid;
+  padding: 0 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.cards-container .MuiPaper-root .wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media (max-width: 750px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .MuiPaper-root {
+    max-height: 414px;
+  }
+  .cards-container img,
+  .cards-container .MuiPaper-root:nth-child(1) img {
+    margin-left: 0;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+  .cards-container .MuiPaper-root:nth-child(1) .wrapper {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cards-container .MuiPaper-root:nth-child(3) img {
+    background-size: auto;
+  }
+}
+@media (min-width: 750px) and (max-width: 991px) {
+  .cards-container .MuiPaper-root:nth-child(1) img {
+    margin-left: -320px;
+  }
+  footer {
+    overflow: hidden;
+  }
+  .box1 {
+    width: 215.3px;
+  }
+  .box3 {
+    width: 250px !important;
+  }
+  .cards-container .MuiPaper-root:nth-child(2) img,
+  .cards-container .MuiPaper-root:nth-child(3) img {
+    margin-left: -120px;
+  }
+}
+
+.MuiCardContent-root {
+  padding: 0;
+  position: relative;
+}
+.wrapper {
+  position: relative;
+  height: 138px;
+}
+.wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: #00101aad;
+  /* z-index: 1000; */
+}
+.MuiTypography-root {
+  /* margin-top: -138px; */
+  margin-bottom: 14px;
+  height: 92px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.MuiCardActions-root {
+  padding: 0;
+  padding-left: 10px;
+  margin-top: -10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.MuiCardActions-root button {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  color: #c19e5c;
+  font-weight: 600;
+  position: relative;
+  letter-spacing: 0.5px;
+  z-index: 1000;
+}
+.MuiCardActions-root button span {
+  font-size: 19px;
+  width: 15px;
+}
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+footer {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2023/12/shanghai-night-china-1-1-scaled.webp");
+  background-repeat: no-repeat;
+  /* padding-top: 10px; */
+  padding-bottom: 10px;
+  text-align: center;
+  position: relative;
+}
+.flex-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  background-color: #1414147d;
+}
+.contact-form {
+  padding-top: 10px;
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.contact-form div {
+  margin-bottom: 10px;
+}
+.contact-form h1 {
+  color: white;
+  line-height: 1;
+  font-size: 32px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.contact-form p {
+  color: #b3b3b3;
+  font-weight: 400;
+  line-height: 15px;
+  margin-bottom: 16px;
+  margin-top: 21px;
+}
+.contact-form form {
+  text-align: start;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.contact-form form label {
+  display: block;
+  color: #b3b3b3;
+  margin-bottom: 25px;
+}
+.contact-form form input,
+.contact-form form textarea {
+  background-color: #7a7a7ac2;
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  color: #01cbec;
+  border: none;
+  border-radius: 3px;
+}
+.contact-form form input[name="Time"]::placeholder {
+  color: #3198a8;
+}
+.contact-form form div:nth-child(6) {
+  margin-bottom: 15px !important;
+}
+@media (min-width: 768px) {
+  .contact-form form div:nth-child(3),
+  .contact-form form div:nth-child(4),
+  .contact-form form div:nth-child(5) {
+    display: none;
+  }
+  .contact-form form {
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+    max-width: 940px;
+    margin: auto;
+    padding: 0;
+  }
+  .contact-form form div:nth-child(1) {
+    display: inline-block;
+    padding-right: 50px;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .contact-form form div:nth-child(2) {
+    width: 50%;
+    display: inline-block;
+    padding-left: 50px;
+    margin-bottom: 0;
+  }
+
+  .contact-form form label {
+    margin-bottom: 17px;
+  }
+  .contact-form form div:last-of-type {
+    margin-top: 1px;
+  }
+  .contact-form form textarea {
+    height: 221.6px !important;
+  }
+  .contact-form form button:last-of-type {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-form form {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  outline: none;
+  caret-color: #01cbec;
+}
+.contact-form form textarea {
+  height: 119px;
+}
+.contact-form form button:not(:last-of-type),
+.contact-form form button:not(:nth-child(2)) {
+  display: block;
+  width: 100%;
+  background-color: rgb(193, 158, 92);
+  padding: 0 24px;
+  border: none;
+  min-height: 40px;
+  font-size: 15px;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+}
+
+/****************************************************/
+footer {
+  overflow: hidden;
+  padding: 0 0 10px;
+  text-align: center;
+  position: relative;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000e6;
+  opacity: 0.3;
+  z-index: 0;
+}
+footer .flex-container {
+  display: flex;
+  padding: 10px ;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+}
+footer .flex-container .box1 {
+  padding: 10px;
+}
+footer .flex-container .box1 img {
+  height: 70.75px;
+  margin-bottom: 13px;
+}
+footer .flex-container .box1 p {
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 730px) {
+  footer .flex-container .box1 img {
+    height: 71px;
+  }
+}
+@media (min-width:1200px) {
+  footer .flex-container .box1 {
+    padding-left: 42px !important;
+  }
+}
+footer .flex-container .box1,
+footer .flex-container .box2 {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+footer .flex-container .box2 {
+  margin-bottom: 85px;
+}
+ul.explore2,
+.two-links {
+  margin-left: 2px;
+}
+
+footer .flex-container h5 {
+  color: rgb(193, 158, 92);
+  font-weight: 600;
+  margin-bottom: 17px;
+  margin-top: -2px;
+}
+footer .flex-container ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+footer .flex-container ul li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 2.5px;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+footer .flex-container ul a {
+  color: white;
+}
+footer .flex-container ul li::marker {
+  color: #c19e5c;
+  margin-right: 0 !important;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+}
+footer .flex-container ul li span {
+  margin-left: -10px;
+}
+footer .flex-container .social,
+footer .flex-container .social a {
+  display: flex;
+  margin-top: 2.5px;
+  align-items: center;
+  gap: 5px;
+}
+footer .social-icon img {
+  width: 17.5px;
+  height: 14px;
+}
+footer .flex-container .social span {
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  font-weight: 400;
+  font-family: "Inter", Sans-serif;
+  line-height: 1.5;
+}
+footer .flex-container .all-social-icons {
+  display: flex;
+  gap: 5px;
+  margin-top: 23px;
+  padding-left: 6px;
+}
+footer .flex-container .all-social-icons a:hover .social-media-icon{
+  background-color: #69727d  !important;
+  transition: .3s;
+}
+footer .flex-container .social-media-icon {
+  width: 44px;
+  height: 44px;
+  background-color: #7a7a7a;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .flex-container .social-media-icon img {
+  width: 20px;
+  height: 20px;
+}
+footer .bottom {
+  margin-top: 10px;
+  max-width: 1020px;
+  margin: auto;
+  position: relative;
+  padding: 10px 10px 6px;
+}
+footer .bottom::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #1414147d;
+}
+footer .bottom p {
+  padding-top: 18px;
+  margin-bottom: 0;
+  border-top: solid 1px white;
+  z-index: 1000;
+  position: relative;
+}
+footer {
+  padding-bottom: 0;
+}
+.form-footer-container {
+  padding-bottom: 0;
+}
+footer .flex-container > div {
+  position: relative;
+}
+@media (min-width: 750px) {
+  footer .flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .flex-container .box2 {
+    display: none;
+  }
+}
+.box22 {
+  position: relative;
+  /* transform: translateX(-1px); */
+}
+.box22 li {
+  margin-bottom: 4px !important;
+}
+@media (max-width: 750px) {
+  .box22 {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer .flex-container > div:not(:nth-child(2)) {
+    width: 250px;
+    padding-left: 0px;
+  }
+  footer .flex-container .box22 {
+    display: flex;
+    gap: 40px;
+    margin-left: 30px;
+    width: fit-content;
+    margin-right: auto;
+  }
+  footer .flex-container .box22 ul.two-links {
+    margin-top: 44px;
+  }
+}
+@media (min-width: 1024px) {
+  footer .flex-container > div:not(:nth-child(2)) {
+    width: 25%;
+  }
+  footer .flex-container .box22 {
+    display: flex;
+    margin-left: -30px;
+  }
+  footer .flex-container .box22 {
+    flex: 1;
+    justify-content: space-around;
+  }
+  footer .flex-container .box22 > div {
+    margin-left: 27px;
+  }
+  footer .flex-container .box22 ul.two-links {
+    margin-top: 33px;
+    margin-right: 90px;
+  }
+}
+footer .box22 h5 {
+  margin-left: 4px;
+}
+.up-space {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 63.1px;
+  background-color: #000811;
+}
+@media (min-width: 750px) {
+  .up-space {
+    height: 91px;
+  }
+}
+@media (min-width: 1023px) {
+  .landing-wishlist {
+    height: 258px !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #010e1e !important;
+    z-index: 1000;
+  }
+  .nested-menu {
+    display: none !important;
+  }
+}
+.text-section {
+  color: white;
+}
+.text-container {
+  padding: 145px 10PX 0!important;
+}
+
+@media (max-width: 750px) {
+  .text-container {
+    padding-top: 130px !important;
+  }
+  .text-container h1 {
+    padding: 0 10px;
+  }
+}
+.landing-wishlist {
+  background-color: #010e1e !important;
+  height: 275px;
+}
+@media (min-width: 576px) {
+  .text-container {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  .text-container {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .text-container {
+    max-width: 800px;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .text-container {
+    max-width: 1140px;
+    margin: auto;
+  }
+}
+.text-section h1 {
+  font-size: 40px !important;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.text-section p {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-left: 5px solid #8e0303;
+  font-size: 14px;
+  color: #696969;
+  background-color: rgba(241, 241, 241, 0.84);
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.text-section p a {
+  text-decoration: underline;
+  font-weight: 600;
+  color: inherit;
+  margin-left: 4px;
+}
+@media (min-width: 1005px) {
+  .bottom-space {
+    height: 148px;
+    width: 100%;
+  }
+  .text-container {
+    padding-top: 126px !important;
+  }
+}
+.landing-contact {
+  background-image: url("./assets/wallpaperflare.com_wallpaper-scaled.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  /* width: 100vw; */
+}
+@media (max-width: 767px) {
+  .contact-container {
+    height: 271.29px !important;
+  }
+}
+@media (min-width: 768px) {
+  .contact-container {
+    height: 557.66px;
+  }
+}
+@media (min-width: 1005px) {
+  .contact-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 557.66px;
+    margin-top: -19px;
+    z-index: 100;
+  }
+  .contact-page header {
+    background-color: transparent !important;
+  }
+}
+.contact-page {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2024/02/pattern.png.webp") !important;
+  z-index: 1000;
+  background-color: #010e1e;
+}
+.landing-contact {
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.landing-contact h1 {
+  font-weight: 550;
+  font-size: 40px;
+  line-height: 1;
+  margin-bottom: 23px;
+  margin-top:6px;
+  position: relative;
+}
+.landing-contact h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: -5px;
+  margin-bottom: 9px;
+  position: relative;
+}
+
+.landing-contact h5 span {
+  color: #00f;
+  letter-spacing: -2px;
+  margin-right: 2px;
+  margin-left: 0.8px;
+}
+.landing-contact h5 a {
+  color: white;
+}
+/***********************************************************/
+.booking {
+  margin: 20px 0;
+  padding: 0 20px;
+  position: relative;
+  color: white;
+}
+@media (min-width: 750px) {
+  .booking {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .booking {
+    margin-top: 50px;
+    letter-spacing: 1px;
+  }
+}
+ @media (min-width: 1005px) {
+  .booking {
+    margin-top: 482px;
+  }
+} 
+.booking .contact-text h2:first-child,
+.booking .get-in-touch h2 {
+  color: #01cbec;
+  font-family: "Montserrat", Sans-serif;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.booking .contact-text h2:last-of-type {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+.booking .contact-text p {
+  max-width: 100%;
+  margin-bottom: 104px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.booking form input {
+  display: block;
+  background-color: transparent;
+  border: none;
+  caret-color: white;
+  border-bottom: solid 1px #69727d;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.booking form input:focus {
+  outline: none;
+  transition: 0.3s;
+  border-color: #333;
+}
+.booking form button {
+  margin-top: 50px;
+  color: white;
+  background-color: #c19e5c;
+  width: 100%;
+  border: none;
+  min-height: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+.booking .get-in-touch h2 {
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+.booking .get-in-touch p {
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
+  margin-bottom: 41px;
+}
+.booking .contact-methods .social {
+  display: flex;
+  margin-bottom: 10px;
+  font-family: "Inter", Sans-serif;
+}
+.booking .contact-methods .social:last-of-type {
+  padding-bottom: 41px;
+}
+.booking .contact-methods .social svg {
+  width: 14px;
+  margin-right: 6px;
+  height: 14px;
+  fill: #01cbec;
+}
+.booking iframe {
+  height: 140px;
+  max-width: 100%;
+  line-height: 1;
+  width: 100%;
+  border: none;
+  margin-top: 46px;
+}
+@media (min-width: 750px) {
+  .booking .contact-text h2:first-child,
+  .booking .get-in-touch h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 750px) {
+  .booking .contact-text h2:first-child {
+    margin-top: 60px !important;
+  }
+  .booking .get-in-touch h2:first-child {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .booking .get-in-touch p {
+    margin-bottom: 20px;
+  }
+  .booking .contact-methods .social {
+    margin-bottom: 0px;
+  }
+  .booking .contact-methods .social:last-of-type {
+    padding-bottom: 20px;
+  }
+  .booking iframe {
+    margin-top: 20px;
+  }
+  .booking {
+    padding-bottom: 70px;
+  }
+}
+@media (min-width: 1024px) {
+  .booking {
+    max-width: 1140px;
+    padding: 0px 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.booking .line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+.contact-page .contact-form {
+  visibility: hidden;
+  height: 380px;
+}
+.contact-page .flex-container::before {
+  display: none;
+}
+.contact-page footer {
+  background-position: center center;
+  background-size: cover;
+}
+.contact-page footer::before {
+  opacity: 0.5;
+}
+.contact-page header {
+  background-color: rgb(0, 12, 97, 0.1) !important;
+}
+/*****************************************************/
+.standard-page,
+.premium-page,
+.luxurious-page {
+  background-color: #010e1e;
+}
+@media (max-width:767px) {
+  .container22 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .skipper h1 {
+    font-size: 32px !important;
+    margin-bottom: 15px !important;
+  }
+  .skipper h2 {
+    font-size: 20px !important;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+  .skipper p {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .skipper .container22 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+.set-sail .container22 {
+  max-width: 1140px;
+  margin: auto;
+}
+.standard-page .set-sail, 
+.luxurious-page .set-sail {
+  margin-top: 120px;
+  position: relative;
+  background-position: center center;
+  margin-bottom: 170px;
+}
+.premium-page .set-sail {
+  margin-top: 170px;
+  position: relative;
+  background-position: center center;
+  margin-bottom: 100px;
+  padding-bottom: 100px !important;
+}
+.standard-page .set-sail::before,
+.premium-page .set-sail::before, 
+.luxurious-page .set-sail::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.premium-page .set-sail::before {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+.standard-page .set-sail .container22,
+.premium-page .set-sail .container22, 
+.luxurious-page .set-sail .container22{
+  z-index: 1000;
+  position: relative;
+}
+.luxurious-page .set-sail .container22و
+.yachts-page .set-sail .container22 {
+  max-width: 1140px !important;
+  margin: auto;
+}
+.yachts-page .set-sail .container22 h1 {
+  font-size: 40px !important;
+}
+.yachts-page .set-sail .container22 p {
+  color: #c2c2c2;
+}
+.standard-page .set-sail h1,
+.premium-page .set-sail h1, 
+.luxurious-page .set-sail h1,
+.about-page .set-sail h1{
+  font-size: 40px;
+}
+.standard-page .set-sail p,
+.premium-page .set-sail p, 
+.luxurious-page .set-sail p{
+  max-width: 1140px;
+  text-align: center;
+  margin: auto;
+}
+.standard-page .set-sail a,
+.premium-page .set-sail a, 
+.luxurious-page .set-sail a{
+  margin-top: 20px !important;
+  border-left-color: white;
+}
+.standard-page header,
+.premium-page header,
+.luxurious-page header {
+  background-color: rgb(0, 12, 97, 0.1);
+  margin-bottom: 470px;
+}
+@media (max-width:750px) {
+  .standard-page header,
+.premium-page header,
+.luxurious-page header {
+  margin-bottom:520px !important;
+  }
+}
+@media (max-width:1022px) {
+  .standard-page header,
+.premium-page header,
+.luxurious-page header {
+  margin-bottom:490px;
+}
+}
+.landing-standard,
+.landing-premium,
+.landing-lurxurious {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  margin-top: -19px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:604.83px;
+  background-position: center center;
+  background-size: cover;
+}
+.landing-standard {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2023/12/Standard-Card-Image-HQ.png.webp");
+}
+.landing-premium  {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2023/12/Premium-Card-Image-HQ.png.webp");
+}
+.luxurious-page .landing-premium  {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2023/12/Luxury-Card-Image-HQ-2048x973.png.webp");
+}
+.landing-standard::before,
+.landing-premium::before,
+.landing-lurxurious::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+}
+.landing-premium::before {
+  opacity: 0.3 !important;
+}
+.landing-standard .text, 
+.landing-premium .text,
+.landing-lurxurious .text{
+  position: relative;
+  text-align: center;
+  margin-top: -2px;
+}
+.landing-standard .text h1, 
+.landing-premium .text h1, 
+.landing-lurxurious .text h1 { 
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 17px;
+  margin-top: -3px;
+  color: white;
+}
+.landing-standard .text p, 
+.landing-premium .text p,
+.landing-lurxurious .text p {
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: -1px;
+}
+* {
+  letter-spacing: 0px;
+}
+.landing-standard .text span,
+.landing-premium .text span,
+.landing-lurxurious .text span {
+  font-weight: 700;
+}
+
+.landing-standard .text a,
+.landing-premium .text a,
+.landing-lurxurious .text a {
+  font-weight: 600;
+  display: block;
+  color: white;
+  margin-top: 34px;
+  margin-left: -5px;
+}
+.discover .container22 {
+  max-width: 1140px !important;
+  margin: auto;
+}
+.standard-page .discover ,
+.premium-page .discover,
+.luxurious-page .discover {
+  padding-top: 50px;
+  width: 100%;
+}
+.standard-page .discover,
+.luxurious-page .discover {
+  padding-bottom: 50px;
+}
+@media (min-width: 576px) {
+  .standard-page .discover .container,
+  .premium-page .discover .container,
+  .luxurious-page .discover .container {
+    width: 100% !important;
+    margin: 0;
+  }
+}
+.standard-page .discover h1,
+.premium-page .discover h1,
+.luxurious-page .discover h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.standard-page .discover p,
+.premium-page .discover p,
+.luxurious-page .discover p {
+  color: #7a7a7a;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+/*/****************************************/
+.standard-page .swiper {
+  height: 100%;
+}
+
+.standard-page .swiper-pagination-bullet,
+.standard-page .swiper-pagination-bullet-active {
+  background-color: #e5e5e5 !important;
+  /* opacity: 0.2; */
+}
+.standard-page .swiper-pagination {
+  margin-bottom: 30px;
+}
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.swiper-slide {
+  color: #fff;
+  box-sizing: border-box;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+  background-color: #333;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1;
+}
+
+.swiper-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+@media (min-width: 1001px) {
+  .swiper-bullet {
+    display: none;
+  }
+}
+.card-swiper {
+  background-color: white;
+  max-height: 450px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.gallery {
+  max-height: 250px;
+  width: 100%;
+}
+.gallery img {
+  height: 250px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius:20px ;
+}
+.card-swiper  {
+  padding-bottom: 20px;
+  border-radius: 20px;
+  max-width: 370px !important;
+}
+.premium-page .card-swiper {
+  width: calc(((100% - 40px) /3)) !important;
+  max-width: 363.34px !important;
+}
+.card-swiper > a {
+  color: black;
+}
+.card-swiper .slick-dots {
+  position: relative;
+  transform: translatey(-80px)
+}
+.card-swiper .text {
+  padding: 15px 10px;
+}
+.card-swiper .text .box1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+.card-swiper .text .box1  h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.card-swiper:not(:first-child) .text .box1 {
+  align-items: end;
+}
+.card-swiper:not(:first-child) .text .box1  h2 {
+  margin: 6.5px 0 14px !important;
+}
+.card-swiper .text .box1  h2 strong {
+  letter-spacing: 0 !important;
+}
+.card-swiper .text .box1 span {
+  position: absolute;
+    right: -10px;
+    top: -25px;
+    opacity: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 0;
+    white-space: nowrap;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.3);
+    text-shadow: 0 -1px 0 #000;
+    background-color: #383838;
+    border-radius: 3px;
+    color: white;
+    max-height: 28px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+    padding: 8px 10px;
+    transition: .5s;
+}
+.card-swiper .text .box1 span::after {
+  content: "";
+  bottom: -9px;
+
+  position: absolute;
+  left: 50%;
+  border: solid 5px;
+  border-color: #383838 transparent transparent transparent;
+}
+.card-swiper .text .box1  svg:hover + span{
+  opacity: 1;
+  /* transition: all 0.3s; */
+  top: -35px;
+}
+.card-swiper .text .box1  svg {
+  font-size: 31px;
+  z-index: 100000;
+  color: #848484;
+  fill: #848484 ;
+  margin-right: 15px;
+  cursor: pointer;
+} 
+.card-swiper .text .box1  svg.red {
+  color: red !important;
+}
+.card-swiper .text .box2 {
+  display: flex;
+  align-items: baseline;
+  margin-top: 8.5px;
+  gap: 4px;
+}
+.card-swiper .text .box2 img {
+  width: 20px;
+  height: 20px;
+  max-height: 100%;
+  height: auto;
+}
+.card-swiper .text .box2 p {
+  font-size: 12px;
+  margin-bottom: 0;
+  /* margin-bottom: 10px; */
+}
+.card-swiper .text .box3 p  {
+  margin-bottom: 1px;
+  margin-top: 10px;
+}
+.card-swiper .text .box3 p strong {
+  letter-spacing: 0 !important;
+  font-size: 17px;
+}
+.card-swiper .text .box2 p span,
+.card-swiper .nested-box1 span:first-of-type,
+.card-swiper .nested-box2 span:first-of-type{
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'montserrat' !important;
+  color: #000 !important;
+  margin-right: 3px;
+  display: inline-block;
+}
+.card-swiper .actions {
+  display: flex;
+  margin-left: auto;
+  justify-content: space-around;
+  padding-right: 10px;
+  padding-left: 12px;
+  flex-wrap: wrap;
+}
+.card-swiper .actions a {
+  padding: 10px;
+  font-size: 13px;
+  height: 39.50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  color: white;
+  text-transform: uppercase;
+}
+.card-swiper .actions a span {
+  letter-spacing: 0;
+}
+.card-swiper .actions a:nth-child(1) {
+  align-items: end;
+}
+.card-swiper .actions a img {
+  padding: 5px;
+  width: 21px;
+  height: 21px;
+}
+.card-swiper .actions a:nth-child(1) {
+  width: 0;
+}
+@media (min-width: 768px) {
+  .card-swiper .actions a:nth-child(1) {
+    display: none;
+  }
+}
+.card-swiper .actions a:nth-child(2) {
+  background-color: #010e1e;
+  max-width: 120.91px;
+}
+.card-swiper .actions a:nth-child(3) {
+  background-color: #25d366;
+  max-width: 117.86px;
+}
+.card-swiper .actions a:nth-child(4) {
+  background-color: #686868;
+  max-width: 96.45px;
+}
+.slick-dots li button:before  {
+  color: #e5e5e5 !important;
+  opacity: 1 !important;
+  font-size:8px !important;
+  /* width: 50px !important; */
+  /* height: 50px !important; */
+}
+.services-page header {
+  background-color: transparent;
+}
+.services-page {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2024/02/pattern.png.webp") !important;
+}
+.services-page .landing-contact, 
+.about-page .landing-contact,
+.faq-page .landing-contact {
+  position: relative;
+  height: 545.81px;
+}
+.faq-page .landing-contact {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2024/02/teahub.io-dubai-wallpaper-4k-2390050.webp");
+}
+.services-page .landing-contact {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2024/02/Fox-and-Luna-Photography-BoS_067.jpg-2020-2-6-16.1.16-1536x1025-1.webp");
+}
+.about-page .landing-contact {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2024/02/peakpx-min-scaled.webp");
+}
+.services-page .landing-contact::before,
+.about-page .landing-contact::before,
+.faq-page .landing-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+}
+.services-page .landing-contact h1,
+.about-page .landing-contact h1,
+.services-page .landing-contact h5,
+.about-page .landing-contact h5 {
+  position: relative;
+}
+.services-page header,
+.about-page header{
+  background-color: rgb(0, 12, 97, 0.1);
+  margin-bottom:400px;
+}
+@media (max-width:992px) {
+  .services-page header {
+    margin-bottom: 0 !important;
+  }
+}
+.faq-page header {
+  margin-bottom: 420px !important;
+}
+.about-page header {
+  margin-bottom:420px !important;
+}
+.services-page .selection-text {
+  padding-top: 100px !important;
+  padding-bottom: 20px !important;
+}
+.services-page .selection-text span {
+  font-size: 39px;
+  font-weight: 900;
+}
+/****************************************************************/
+.services-page .card {
+  height: 600px;
+  border-radius: 6px;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.services-page .decoration {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2024/02/3D7C115B-DB9C-C815-4B50-4E8C4ECDDB88.jpeg.webp");
+}
+.services-page .catering {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2024/02/Tandoori-chicken-1.jpg.webp");
+}
+.services-page .water-sports {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2024/02/JETSKI-IMAGE.jpg");
+}
+.services-page .decoration .text {
+  border-top: solid 2px white;
+}
+.services-page .card .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 20px;
+  height: auto;
+  padding-bottom: 30px;
+  background-color: #00101A6B;
+}
+.services-page .card .text h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+.services-page .card .text p {
+  color: #c7bdbd;
+}
+.services-page .card .text a {
+  color: black;
+  background-color: white;
+  padding: 10px 40px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.services-page .set-sail {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-bottom: 100px !important;
+}
+.slidebar-services {
+  padding: 10px;
+  margin: 10px;
+  background-color: #010e1e;
+}
+.services-page footer .flex-container {
+  padding-left: 30px;
+}
+/********************************************************************************************/
+.about-page .about-text {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.about-page .about-text .child {
+  width: calc(100% / 3);
+  align-self: start;
+  margin-top: -4px;
+}
+.about-page .about-text h5 {
+  color: #01cbec;
+  font-size: 16px;
+  margin-top: -20px;
+  letter-spacing: 1.1px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.about-page .about-text h1 {
+  color: #fff;
+  letter-spacing: 1.2px;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 600;
+  line-height: 1.05;
+  margin-bottom: 15px;
+}
+.about-page .about-text .text {
+  padding: 0px 10px 10px;
+}
+.about-page .about-text .text > p {
+  color: #7a7a7a;
+  letter-spacing: .8px;
+  font-weight: 400;
+}
+.about-page .about-text .numbers p {
+  color: #C19E5C00;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 600;
+  -webkit-text-stroke-width: 1px;
+  font-size: 69px;
+  stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  stroke: white;
+  margin-bottom: 0;
+}
+.about-page .about-text .numbers  div.name {
+ margin-top: -20px;
+ font-size: 19px;
+ color: #01cbec;
+ font-weight: 600; 
+ line-height: 1;
+}
+.about-page .about-text .numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 50px;
+  padding-left: 30px;
+  justify-content: center;
+}
+.about-page .about-text .numbers  > div {
+  text-align: center;
+  width: 40%;
+}
+.about-page .about-text .image img {
+  max-width: 100%;
+  margin-top: 10px;
+  max-height: 641.01px;
+}
+.about-page .about-text .navigate {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 15px;
+  align-self: center;
+}
+.about-page .about-text .navigate .img {
+  max-width: 100%;
+  height: 324px;
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2023/12/image-24.png.webp");
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 20px;
+}
+.about-page .about-text .navigate  p {
+  color: #7a7a7a;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: .8px;
+}
+@media (max-width:767px) {
+  .about-page .about-text {
+    flex-direction: column;
+  }
+  .about-page .about-text .navigate  p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .about-page .about-text .child {
+    width: 100% !important;
+  }
+  .about-page .about-text h5  {
+    font-size: 24px;
+    margin: 0 0 0 32px;
+    padding: 20px 0 20px 17px;
+  }
+  .about-page .about-text h1 {
+    margin-left: 49px;
+    margin-bottom: 20px;
+  }
+  .about-page .about-text .text > p {
+    margin-bottom: 14.4px;
+    margin-left: 52px;
+    margin-right: 45px;
+  }
+  .about-page .about-text .image  {
+    max-width: 575px;
+    margin: auto;
+  }
+}
+@media (min-width: 1140px) {
+  .about-page .about-text {
+    max-width: 1140px;
+    margin: auto;
+  }
+}
+@media (max-width: 991px) {
+  .about-page .about-text .numbers {
+    gap: 20px !important;
+  }
+  .about-page .about-text .numbers > div {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .about-page .about-text {
+    margin-top: 0px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .about-page header {
+    margin-bottom: 0 !important;
+  }
+  .about-page .about-text {
+    margin-top: 275px;
+  }
+}
+.about-page {
+  background-color: #010e1e;
+}
+/********************************************************************************/
+.select-yacht .select-yacht-container {
+  max-width: 1140px;
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
+  margin: auto;
+}
+/* .premium-page .select-yacht .select-yacht-container { */
+  /* padding-left: 10px; */
+/* } */
+@media (min-width:768px) {
+  .select-yacht .select-yacht-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .card-swiper {
+    max-width: calc((100% - 0px) / 3);
+    width: calc((100% - 20px) / 3);
+  }
+  .standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(4),
+  .standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(5),
+  .premium-page .select-yacht .select-yacht-container .card-swiper:last-child,
+  .luxurious-page .select-yacht .select-yacht-container .card-swiper:nth-child(16),
+  .luxurious-page .select-yacht .select-yacht-container .card-swiper:nth-child(17) {
+    width: calc(((100%) /3)) !important;
+    max-width: calc(((100%) /3) + 10px) !important;
+  }
+}
+@media (max-width:768px) {
+  .card-swiper {
+    max-width: 100% !important;
+    max-height: 500px !important;
+    margin: 0 10px 10px;
+  }
+  .actions {
+    margin-top: 58px;
+    justify-content: space-around !important;
+  }
+  .card-swiper .actions a {
+    font-size: 10.5px !important;
+    max-height: 35.75px;
+  }
+}
+@media (min-width:768px) and (max-width:1140px) {
+  .select-yacht .select-yacht-container {
+    padding-left: 10px;
+  }
+  .actions {
+    margin-top: -70px;
+    row-gap: 30px;
+  }
+  .text .box2,
+  .text .box3 {
+    opacity: .1;
+  }
+}
+.standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(1) .box2,
+.standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(2) .box2,
+.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(9) .box2,
+.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(10) .box2 {
+  display: none;
+}
+.standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(1) .actions,
+.standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(2) .actions,
+.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(9) .actions,
+.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(10) .actions {
+  margin-top: 7px;
+}
+.standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(1) .box3{
+  margin-bottom: 25px;
+  margin-top: 13px;
+}
+.standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(2) .box3,
+.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(9) .box3,
+.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(10) .box3 {
+  margin-bottom: 20px;
+  margin-top: 18px;
+}
+.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(1) .box2 {
+  margin-top: 4px;
+}
+.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(1) .box3 {
+  margin-top: -1px;
+  margin-bottom: 7px;
+}
+.luxurious-page .select-yacht-container .card-swiper:not(:nth-child(11)):not(:nth-child(14)):not(:nth-child(17)) .nested-box1,
+.luxurious-page .select-yacht-container .card-swiper:not(:nth-child(11)):not(:nth-child(14)):not(:nth-child(17)) .nested-box2 {
+  display: none;
+}
+.luxurious-page .select-yacht-container .card-swiper:nth-child(14) .nested-box2 {
+  display: none;
+}
+.luxurious-page .select-yacht-container .card-swiper:nth-child(11) .nested-box1,
+.luxurious-page .select-yacht-container .card-swiper:nth-child(17) .nested-box1 {
+  display: none;
+}
+.luxurious-page .card-swiper:not(:nth-child(1)) .text {
+  padding-top: 9px  !important;
+}
+.luxurious-page .card-swiper .actions {
+  margin-top: 7px !important;
+  padding-left: 13px;
+}
+.luxurious-page .card-swiper:nth-child(1) .box1 h1 {
+  margin-bottom: 15px;
+}
+.luxurious-page .card-swiper:nth-child(1) .box1 svg {
+  padding-top: 5px;
+}
+.luxurious-page .card-swiper:nth-child(1) .actions {
+  margin-top: 0;
+}
+.card-swiper .box2 .nested-box1,
+.card-swiper .box2 .nested-box2 {
+  font-size: 12px;
+  display: flex;
+  align-items: baseline;
+}
+.card-swiper .box2 .nested-box1 .line-right,
+.card-swiper .box2 .nested-box2 .line-right{
+  width: 2px;
+  height: 10px;
+  background-color: black;
+  margin-left: 5px;
+  margin-right: 1px;
+}
+.luxurious-page .card-swiper .box2 .nested-box1 img,
+.luxurious-page .card-swiper .box2 .nested-box2 img{
+  margin-right: 3px;
+}
+.review-swiper {
+  padding: 10px 10px 50px;
+  margin: auto;
+  background-color: #010e1e;
+}
+.review-swiper .review {
+  position: relative;
+  color: white;
+  padding: 23px;
+  margin: 40px;
+  max-width: 409.6px;
+  background-color: #4e5762 !important;
+}
+@media (max-width: 600px) {
+  .review-swiper .review {
+    margin: auto;
+    margin-bottom: 30px !important;
+    max-width: calc(100% - 40px);
+  }
+}
+.review-swiper .review img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  width: 40px !important;
+  height: 40px !important;
+}
+.review-swiper .review p {
+  font-weight: bolder;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+.review-swiper .review span {
+  color: #01cbec;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.review-swiper .img-hidden img {
+  display: none;
+}
+.custom-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.custom-dots {
+  display: flex !important;
+}
+.custom-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+@media (min-width:600px) {
+.custom-dots li:nth-child(3) button,
+.custom-dots li:nth-child(4) button{
+  display: none !important;
+}
+}
+
+.custom-dots button.active {
+  border: solid 2px black;
+  outline: solid 1px white;
+}
+.select-yacht-container.home .card-swiper:not(:last-child) .nested-box1,
+.select-yacht-container.home .card-swiper:not(:last-child) .nested-box2,
+.select-yacht-container.home .card-swiper:last-child .nested-box2,
+.select-yacht-container.home .card-swiper:first-child .box2 {
+  display: none;
+}
+.select-yacht-container.home .card-swiper:first-child .actions {
+  margin-top: 32px;
+}
+.select-yacht-container.home .card-swiper .box1 h2 {
+  margin-top: 0 !important;
+}
+.select-yacht-container.home .card-swiper .box3 {
+  margin-top: 12px;
+}
+.select-yacht-container.home .card-swiper .actions {
+  margin-top: 6.5px;
+  padding-left: 14px;
+}
+/* .yacht-page {
+  padding-left: 0 6px;
+} */
+.landing-yacht {
+  background-color: #010e1e;
+  padding-left: 10px;
+}
+.landing-yacht .yacht-container {
+  max-width: 1140px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.landing-yacht .location{
+  margin-top: 70px;
+  display: flex;
+}
+@media (min-width:768px) and (max-width:1024px) {
+  .landing-yacht .yacht-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .landing-yacht .location {
+    margin-top: 206px;
+  }
+}
+@media (max-width:767px) {
+  .landing-yacht .yacht-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .landing-yacht .location {
+    margin-top: 5px;
+  }
+}
+.landing-yacht .location p,
+.landing-yacht .location a {
+  color: white;
+  font-weight: 600;
+}
+.landing-yacht .location span {
+  color: #00f;
+  display: inline-block;
+  font-weight: 600;
+  transition: all .2s linear;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.landing-yacht .yacht-heading h1 {
+  color: var(--e-global-color-da37b09);
+  color: white;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 32px !important;  
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 25px;
+}
+.landing-yacht .yachtgallery {
+  margin-top: 50px;
+  max-width: 1140px;
+}
+.landing-yacht .yachtgallery .slick-slide {
+  margin-right: 15px;
+  max-height: 100%;
+  width: calc((100% - 60px)/4);
+  margin-right: 15px;
+  max-width: calc((100% - 60px)/4);
+}
+.landing-yacht button.custom-dot, 
+.landing-yacht  .slick-dots li {
+  width: 10px !important;
+  height: 10px !important;
+}
+.landing-yacht  .slick-dots li
+.landing-yacht .yachtgallery .slick-slide img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+.yacht-page .slick-slide img {
+  width: 100%;
+  height: 100%;
+}
+.yacht-details {
+  padding-top: 10px;
+  margin-top: 75px;
+  padding-bottom: 10px;
+  background-color: #010e1e;
+  padding-left: 10px;
+}
+.yacht-details .container {
+  max-width: 1140px;
+  padding: 0;
+  display: flex;
+}
+@media (max-width:767px) {
+  .yacht-details .container  {
+    flex-direction: column;
+  }
+  .yacht-details .container > div {
+    width: 100% !important;
+  }
+  .yacht-details .container .box1 {
+    padding: 10px;
+    margin: 7px;
+  }
+  .yacht-details .container .box1 > div {
+    padding-right: 10px !important;
+  }
+  .yacht-details {
+    padding-right: 15px !important;
+  }
+  .yacht-details .container .box2 {
+    padding: 30px 30px 40px 35px;
+  }
+}
+.yacht-details .container > div {
+  margin: 7px;
+  width: 50%;
+  padding: 70px;
+  border-radius: 3px;
+  background-color: #13202d;
+  color: white;
+}
+.yacht-details .container > div:nth-child(1) {
+  margin-left: 2px !important;
+}
+
+.yacht-details .container > div h3 {
+  color: var(--e-global-color-da37b09);
+  font-family: "Inter", Sans-serif;
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+.yacht-details .container .box1 > div{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.yacht-details .container .box1 table {
+  width: 100%;
+}
+.yacht-details .container .box1 table tr:first-of-type td {
+  background-color: hsla(0,0%,50.2%,.0705882353);
+}
+.page54ft .yacht-details .container .box1 table tr:nth-child(1) td {
+  background-color: transparent !important;
+}
+.page54ft .yacht-details .container .box1 table tr:nth-child(2) td {
+  background-color: hsla(0,0%,50.2%,.0705882353) !important;
+}
+.page130ft .yacht-details .container .box1 table tr td{ 
+background-color: transparent !important;
+}
+.page130ft .yacht-details .container .box1 table tr:hover td {
+  transition: 0.3s;
+  background-color: hsla(0,0%,50.2%,.0705882353) !important;
+}
+.yacht-details .container .box1 table tr td {
+  color: #fff;
+  font-size: 15px;
+  width: 50%;
+  padding: 15px;
+  line-height: 1.5;
+  text-align: center;
+}
+.yacht-details .container .box1 table tr:hover td {
+  background-color: hsla(0,0%,50.2%,.0705882353);
+  transition: 0.3s;
+}
+.yacht-details .container .box2 > div {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.yacht-details .container .box2 > div ul li:last-child {
+  padding-left: 5px;
+}
+.yacht-details .container .box2 > div ul li {
+  vertical-align: baseline;
+  margin-bottom: 15px;
+  line-height: 2;
+  position: relative;
+}
+.yacht-details .container .box2 > div ul li::before {
+  content: "\2022";
+  position: absolute;
+  color: #c19e5c;
+  font-weight: 700;
+  top: -22px;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 32px;
+}
+.yacht-details .container .box2 > div ul li:last-child::before {
+  margin-left: -38px !important;
+}
+.yacht-page {
+  background-color: #010e1e;
+}
+@media (max-width:992px) {
+  .yacht-page header {
+    background-color: black !important;
+  }
+}
+.yacht-page header {
+  background-color: #010e25;
+}
+.yacht-page .heading {
+  padding-left: 10px;
+}
+.yacht-page .heading h3{
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.yacht-page .heading h3 img {
+  width: 60px;
+  height: 60px;
+}
+.yacht-page .heading2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.yacht-page .heading2 h1 {
+  color: white;
+  padding: 10px 0;
+  font-family: "Playfair Display",serif;
+  font-size: 50px;
+  font-weight: 600;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1;
+}
+.yacht-page .set-sail {
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+.yacht-page .slick-track {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+@media (max-width:767px) {
+  .yacht-page .heading2 h1 {
+    font-size: 20px;
+  }
+}
+@media (min-width:1024px) {
+  .yacht-form {
+    margin: auto !important;
+  }  
+}
+.yacht-form {
+  background-color: white;
+  margin: 0 10px;
+  max-width: 1140px;
+}
+.yacht-form form {
+  padding: 15px 5px;
+}
+@media (min-width:768px) {
+  .yacht-form form {
+    display: flex;
+  }
+  .yacht-form form > div {
+    margin-bottom: 0 !important;
+  }
+}
+.yacht-form form > div,
+.yacht-form form > div label {
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.yacht-form form > div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+  border: solid 1px #fff;
+  border-radius: 13px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  align-content: center;
+  flex: 1;
+}
+.yacht-form form > div label {
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+  color: #000;
+}
+.yacht-form form > div input {
+  height: 40px;
+  margin-top: -5px;
+  border-radius: 3px;
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  border: solid 1px white;
+}
+.yacht-form form > div input:focus {
+  outline: none;
+  border: solid 1px #eee;
+  transition: border 0.3s;
+}
+.yacht-form form > div input::placeholder {
+  color: #000;
+}
+.yacht-form form > div:last-child {
+  border-radius: 13px;
+  background-color: #01cbec;
+  margin-bottom: 0;padding: 0;
+}
+.yacht-form form button {
+  background-color: #01cbec;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+  width: 100%;
+  color: #fff;
+  min-height: 40px;
+  height: -webkit-fill-available;
+  padding: 0 24px;
+  border: none;
+  border-radius: 13px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 15px;
+}
+.advantages {
+  padding: 0 10px;
+}
+@media (max-width:768px) {
+  .advantages {
+    display: none;
+  }
+}
+.advantages .container {
+  max-width: 1140px;
+  display: flex;
+  padding: 10px 0;
+  gap: 10px;
+}
+.advantages .container div {
+  width: 25%;
+  padding: 10px;
+  background-color: #13202d;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 192px;
+}
+@media (min-width: 1067px) {
+  .advantages .container div {
+    min-height: 168px !important;
+  }
+}
+.advantages .container div h5 {
+  color: #01cbec;
+  font-family: "Histeagin", Sans-serif;
+  font-size: 22.4px;
+  font-weight: 400;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+.advantage-slider {
+  padding: 10px;
+}
+@media (min-width:768px) {
+  .advantage-slider {
+    display: none;
+  }
+}
+.advantage-slider > div {
+  margin-bottom: 10px;
+}
+.advantage-slider > div .advantage {
+  width: 100px !important;
+  height: 100px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #13202d;
+}
+.advantage-slider > div .advantage img {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+.advantage-slider > div .advantage h5 {
+  text-align: center;
+  font-size: 10px;
+  margin: 0;
+  color: #01cbec;
+  margin-top: 10px;
+}
+.whats-link {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 100000;
+  cursor: pointer;
+}
+.whats-link a {
+  display: flex;
+  align-items: center;
+}
+.whats-link img {
+  width: 50px;
+  height: 50px;
+}
+.whats-link:hover p {
+  animation: whats 0.3s;
+  display: flex;
+}
+.whats-link p {
+  padding: 0px 16px;
+    line-height: 1.6;
+    font-size: 15px;
+    background-color: rgb(37, 211, 102);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 0px 10px;
+    order: 0;
+    display: none;
+}
+@keyframes whats {
+  0% {
+    display: none;
+    transform: scale(0);
+    transform-origin: right center;
+  }
+  100% {
+    display: flex;
+    transform-origin: right center;
+    transform: scale(1);
+  }
+}
+.yachts-page {
+  background-color: #010e1e;
+}
+.yacht-ft80 .yacht-details .container .box2 > div {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.yacht-ft80 .yacht-details .container .box2 > div ul li:last-of-type {
+  display: none !important;
+}
+.yacht-container > div {
+  transform: translateX(-5px);
+}
+.yacht-container .yachtgallery {
+  transform: translateX(0) !important;
+}
+.yachts-page.main .select-yacht-container .card-swiper:nth-child(1) .box2,
+.yachts-page.main .select-yacht-container .card-swiper:nth-child(2) .box2,
+.yachts-page.part3 .select-yacht-container .card-swiper:nth-child(2) .box2,
+.yachts-page.part3 .select-yacht-container .card-swiper:nth-child(3) .box2 {
+  display: none !important;
+}
+.yachts-page.main .select-yacht-container .card-swiper:nth-child(1) .box1 {
+  margin-top: 3px;
+  margin-bottom: 11px !important;
+}
+.yachts-page.main .select-yacht-container .card-swiper:nth-child(1) .actions {
+  margin-top: 33px !important;
+}
+.yachts-page.main .select-yacht-container .card-swiper:nth-child(2) .box1,
+.yachts-page.part3 .select-yacht-container .card-swiper:nth-child(2) .box1,
+.yachts-page.part3 .select-yacht-container .card-swiper:nth-child(3) .box1 {
+  margin-bottom: 18px;
+}
+.yachts-page.main .select-yacht-container .card-swiper:nth-child(2) .box3,
+.yachts-page.part3 .select-yacht-container .card-swiper:nth-child(2) .box3,
+.yachts-page.part3 .select-yacht-container .card-swiper:nth-child(3) .box3 {
+  margin-bottom: 28px;
+}
+.yachts-page .select-yacht-container .card-swiper .actions {
+  padding-left: 14px;
+}
+@media (min-width:1024px) {
+  .yachts-page header {
+    margin-bottom: 330.5px !important;
+  }
+}
+.yachts-page .contact-container {
+  height: 464.69px !important;
+}
+.yachts-page .contact-container .landing-contact {
+  position: relative;
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2024/01/extra-large.webp");
+  background-position: bottom center !important;
+}
+.yachts-page .contact-container .landing-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.yachts-page .contact-container .landing-contact h1,
+.yachts-page .contact-container .landing-contact h5 {
+  position: relative;
+}
+.yachts-page .selection-text h1 {
+  font-size: 32px !important;
+}
+.yachts-page .contact-container .landing-contact h1 {
+  letter-spacing: 0px !important;
+  font-weight: 550;
+  text-align: justify;
+  /* letter-spacing: 1.5px !important; */
+}
+.yachts-page .contact-container .landing-contact h5  {
+  font-weight: 600;
+}
+.yachts-page .discover .container22{
+  padding: 0 !important;
+}
+.yachts-page .discover span {
+  font-size: 16px !important;
+}
+.yachts-page .discover h1 {
+  margin: 16px 0 20px !important;
+  padding: 0 5px;
+}
+.yachts-page .discover p {
+  color: #7a7a7a !important;
+  font-size: 16px !important;
+}
+.pagination-yachts {
+  text-align: center;
+  padding-top: 50px;
+}
+.pagination-yachts span:first-of-type {
+  background-color: #d9d9d9;
+  padding: 12px;
+  color: #000 !important;
+  border: 3px solid;
+  border-radius: 50%;
+}
+.pagination-yachts .page-number {
+  padding: 12px;
+    color: #fff !important;
+    display: inline-block;
+    border: 3px solid #fff;
+    margin-right: 3px;
+    border-radius: 50%;
+}
+.yachts-page .set-sail {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.pagination-yachts span:first-child {
+  margin-right: 5px !important;
+}
+.yachts-page.part5 .select-yacht .select-yacht-container  .card-swiper:nth-child(2) .box2 .nested-box1,
+.yachts-page.part5 .select-yacht .select-yacht-container  .card-swiper:nth-child(5) .box2 .nested-box2,
+.yachts-page.part6 .select-yacht .select-yacht-container  .card-swiper:nth-child(2) .box2 .nested-box1 {
+  display: none !important;
+}
+.experience {
+  padding: 0 10px;
+  margin-bottom: 100px;
+}
+.experience .container {
+  display: flex;
+  max-width: 1140px;
+  margin: auto;
+  padding: 10px 0;
+  flex-basis: auto;
+  flex-grow: 1;
+  align-items: center;
+  flex-shrink: 1;
+  align-self: auto;
+}
+@media (max-width:768px) {
+  .experience .container {
+    flex-direction: column;
+    width: 97% !important;
+  }
+  .experience .container > div:not(.section-img) {
+    width: 100% !important;
+  }
+  .experience .content {
+    text-align: center;
+    margin: 50px 0px 5px;
+  }
+  .experience .content .box {
+    flex-direction: column !important;
+  }
+  .experience .section-img {
+    padding: 0 !important;
+    width: 87% !important;
+  }
+  .experience .section-img .text-box  {
+    left: 0px !important;
+    top: 50% !important;
+    width: 268.266px !important;
+  }
+  .experience .section-img .text-box div:first-child {
+    font-size: 40px !important;
+  }
+  .experience .section-img .text-box p {
+    text-align: center !important;
+    line-height: 2.5 !important;
+    letter-spacing: 1px;
+  }
+  .experience .section-img .text-box span {
+    display: block;
+  }
+}
+@media (min-width:768px) and (max-width:1024px) {
+  .experience .section-img .text-box {
+    left: 71px !important;
+    top: 650px !important;
+    width: 77% !important;
+  }
+  .experience .section-img .text-box p {
+    display: flex;
+    flex-direction: column;
+  }
+  .experience .container  {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+  .experience .container {
+    width: 87% !important;
+  }
+}
+.experience .container > div {
+  width: 50%;
+  position: relative;
+}
+.experience .section-img {
+  padding: 30px;
+}
+.experience .section-img img {
+  max-width: 100%;
+  height: auto;
+}
+.experience .section-img .text-box {
+  position: absolute;
+  left: 280px;
+  padding: 25px;
+  background-color: #01cbec;
+  width: 50.727%;
+  z-index: 10;
+  top: 667px;
+}
+.experience .section-img .text-box  .number {
+  display: flex;
+  justify-content: center;
+}
+.experience .section-img .text-box div:first-child {
+  color: #000c61;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  font-size: 69px;
+  font-family: "Montserrat",Sans-serif;
+}
+.experience .section-img .text-box p {
+  font-weight: 600;
+  color: #000c61;
+  text-align: center;
+  line-height: 2.5;
+  font-size: 19px;
+  margin-bottom: 0;
+  font-family: "Montserrat",Sans-serif;
+}
+.experience .content h5 {
+  color:#01cbec;
+  font-family: "Playfair Display", Sans-serif;
+  font-weight: 600;
+  font-style: italic;
+
+}
+.experience .content h3 {
+  color: white;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  line-height: 1;
+}
+@media (max-width:768px) {
+  .experience .content h5 {
+    margin-bottom: 20px !important;
+  }
+}
+.experience .content > p {
+  color: #7a7a7a;
+  margin-bottom: 0;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  font-family: "Montserrat",sans-serif;
+}
+.experience .content .box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+.experience .content .box img {
+  width: 77.54px;
+  height: 77.54px;
+  display: inline-block;
+}
+.experience .content .box h6 {
+  color: #00ccff;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.experience .content .box p {
+  text-align: justify;
+  font-size: 15px;
+  padding: 0 15px;
+  color: white;
+  font-weight: 400;
+  font-family: "Inter",sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.error-page header {
+  margin-bottom: 606.6px;
+}
+.error-page .landing-error {
+  background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2023/12/shanghai-night-china-1-1-scaled.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 737.6px;
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+  justify-content: center;
+}
+.error-page .landing-error::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000094;
+}
+.error-page .landing-error .container {
+  max-width: 1140px;
+  text-align: center;
+  color: white;
+  position: relative;
+  /* margin-top: -60px; */
+  padding: 0 10px;
+}
+.error-page .landing-error .container h1:first-child {
+  color: white;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 200px;
+  font-weight: 600;
+  -webkit-text-stroke-width: 2px;
+  stroke-width: 2px;
+  margin-bottom: 0;
+  -webkit-text-stroke-color: #fff;
+  /* stroke: var(--e-global-color-da37b09); */
+}
+.error-page .landing-error .container h1:nth-child(2) {
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 600;
+  margin-top: -25px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+.error-page .landing-error .container div {
+  margin-top: 17px;
+}
+.error-page .landing-error .container a {
+  display: block;
+  padding: 12px 24px;
+  background-color: #c19e5c;
+  border-style: solid;
+  border-width: 0;
+  width: fit-content;
+  border-color: #fff;
+  color: white;
+  border-radius: 3px;
+  margin: 20px auto 0;
+  height: 39px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error-page .landing-error .container a:hover {
+  background-color: #00ccff;
+  transition: 0.3s;
+}
+@media (max-width:767px) {
+  .error-page header {
+    background-color: #010812;
+  }
+  .error-page .landing-error {
+    top: 63.1px !important;
+  }
+  .error-page .landing-error .container h1:first-child {
+    font-size: 69px !important;
+  } 
+  .error-page .landing-error .container h1:nth-child(2) {
+    font-size: 22px !important;
+    margin-top: 20px;
+  }
+  .error-page .landing-error .container div {
+    font-size: 12px !important;
+  }
+}
+@media (min-width:768px) and (max-width:1007px) {
+  .error-page .landing-error {
+    top: 111px !important;
+  }
+  .error-page header {
+    background-color: #010812;
+  }
+}
+.faq-page .faq-content  {
+  margin-bottom: 120px;
+  padding: 0 10px;
+}
+.faq-page .faq-content .container {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.faq-page .faq-content .container > div {
+  padding: 10px;
+  width: 50%;
+}
+.faq-page .faq-content .container .text h2 {
+  font-weight: 600;
+  font-size: 32px;
+  color: white;
+  line-height: 1;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+.faq-page .faq-content .container .text > h6 {
+  color: #01cbec;
+  font-weight: 600;
+}
+.faq-page .faq-content .container .text > p {
+  color: #7a7a7a;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 35px;
+}
+.faq-page  .margin {
+  width: 100%;
+  height: 120px;
+}
+.faq-page .image img {
+  width: 100%;
+  position: relative;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+.faq-page .questions {
+  border: solid 1px white;
+}
+.faq-page .faq-content .ques {
+  padding: 15px 20px;
+  background-color: #7A7A7AB3;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  max-height: 46px;
+  border: solid 1px white;
+  color: #01cbec;
+  display: flex;
+  align-items: center;
+}
+.faq-page .faq-content .ques h6 {
+  margin-bottom: 0;
+}
+.faq-page .faq-content svg {
+  width: 1rem;
+  margin-right: 8px;
+  height: 1rem;
+  fill: #01cbec;
+}
+.faq-page .faq-content .ans {
+  padding: 15px 20px;
+}
+.faq-page .faq-content .ans p {
+  color: white;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: flex;
+}
+.faq-page {
+  background-color: #010e1e;
+}
+@media (max-width:1005px) {
+  .faq-page header {
+    margin-bottom: 0 !important;
+  }
+  .faq-page .landing-contact {
+    position: relative !important;
+  }
+  .faq-page .contact-container {
+    height: 545.8px !important;
+  }
+}
+@media (max-width:767px) {
+  .faq-page .container {
+    flex-direction: column;
+  }
+  .faq-page .container {
+    padding: 0;
+  }
+  .faq-page .container  > div {
+    width: 100% !important;
+  }
+  .faq-page .faq-content .ans {
+    padding: 7px 15px;
+  }
+}
+.ans-colsed {
+  animation: height-up .4s linear forwards;
+  overflow: hidden !important;
+}
+@keyframes height-up {
+  0% {
+    height: auto ;
+  }
+  100% {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+/* .mt-15 {
+  margin-top: -15px;
+  transition: 0.3s linear;
+} */
