@@ -114,25 +114,22 @@ nav ul.links li {
     margin-right: 15px;
   }
   /* nav ul.links > li:not(:last-child):not(:first-child) { */
-    /* margin-right: 16px; */
+  /* margin-right: 16px; */
   /* } */
-    nav ul.links > li:nth-child(4),
+  nav ul.links > li:nth-child(4),
   nav ul.links > li:nth-child(5) {
     margin-right: 18px;
   }
   nav ul.links li.item a:hover,
-  nav ul.links > li.active a  {
-  color: #01cbec !important;
-  background-color: transparent !important;
-  transition: all 0.4s;
-}
+  nav ul.links > li.active a {
+    color: #01cbec !important;
+    background-color: transparent !important;
+    transition: all 0.4s;
+  }
   nav ul.links > li:nth-child(4) {
     margin-right: 16px;
   }
 }
-
-
-
 
 nav ul.links > li a {
   color: white;
@@ -330,7 +327,7 @@ header ul.links li.yachts {
     transition: all 0.4s;
   }
   nav ul.links li:hover a,
-  nav ul.links a.active  {
+  nav ul.links a.active {
     color: white;
     transition: all 0.4s;
   }
@@ -413,7 +410,7 @@ header ul.links li.yachts {
     margin-right: calc((100% - 1140px) / 2);
   }
 }
-@media (max-width:1023px) {
+@media (max-width: 1023px) {
   header {
     background-color: rgb(00, 00, 00, 0.5) !important;
   }
@@ -439,8 +436,8 @@ header ul.links li.yachts {
   height: 40px !important;
   padding: 10px 20px 10px 28px !important;
 }
-.nested-menu  {
-  padding: 0 !important; 
+.nested-menu {
+  padding: 0 !important;
 }
 .nested-menu a.active {
   background-color: #c19e5c !important;
@@ -547,9 +544,9 @@ header ul.links li.yachts {
     font-size: 14px;
   }
   .standard-page .discover,
-.premium-page .discover {
-  padding-bottom: 0 !important;
-}
+  .premium-page .discover {
+    padding-bottom: 0 !important;
+  }
 }
 .skipper h1 {
   line-height: 1.5;
@@ -559,7 +556,7 @@ header ul.links li.yachts {
   padding: 0;
   /* max-width: 1140px !important; */
 }
-@media (min-width:758px) {
+@media (min-width: 758px) {
   .plan .container22 {
     max-width: 1300px;
     margin: auto;
@@ -634,7 +631,7 @@ header ul.links li.yachts {
   background-position: center center;
   background-size: cover;
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .cards-container .MuiPaper-root {
     max-height: 405px !important;
   }
@@ -903,7 +900,7 @@ footer::before {
 }
 footer .flex-container {
   display: flex;
-  padding: 10px ;
+  padding: 10px;
   flex-direction: column;
   text-align: left;
   position: relative;
@@ -924,7 +921,7 @@ footer .flex-container .box1 p {
     height: 71px;
   }
 }
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   footer .flex-container .box1 {
     padding-left: 42px !important;
   }
@@ -998,9 +995,9 @@ footer .flex-container .all-social-icons {
   margin-top: 23px;
   padding-left: 6px;
 }
-footer .flex-container .all-social-icons a:hover .social-media-icon{
-  background-color: #69727d  !important;
-  transition: .3s;
+footer .flex-container .all-social-icons a:hover .social-media-icon {
+  background-color: #69727d !important;
+  transition: 0.3s;
 }
 footer .flex-container .social-media-icon {
   width: 44px;
@@ -1138,7 +1135,7 @@ footer .box22 h5 {
   color: white;
 }
 .text-container {
-  padding: 145px 10PX 0!important;
+  padding: 145px 10px 0 !important;
 }
 
 @media (max-width: 750px) {
@@ -1257,7 +1254,7 @@ footer .box22 h5 {
   font-size: 40px;
   line-height: 1;
   margin-bottom: 23px;
-  margin-top:6px;
+  margin-top: 6px;
   position: relative;
 }
 .landing-contact h5 {
@@ -1298,11 +1295,11 @@ footer .box22 h5 {
     letter-spacing: 1px;
   }
 }
- @media (min-width: 1005px) {
+@media (min-width: 1005px) {
   .booking {
     margin-top: 482px;
   }
-} 
+}
 .booking .contact-text h2:first-child,
 .booking .get-in-touch h2 {
   color: #01cbec;
@@ -1449,7 +1446,7 @@ footer .box22 h5 {
 .luxurious-page {
   background-color: #010e1e;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .container22 {
     padding-left: 5px !important;
     padding-right: 5px !important;
@@ -1477,7 +1474,7 @@ footer .box22 h5 {
   max-width: 1140px;
   margin: auto;
 }
-.standard-page .set-sail, 
+.standard-page .set-sail,
 .luxurious-page .set-sail {
   margin-top: 120px;
   position: relative;
@@ -1492,7 +1489,7 @@ footer .box22 h5 {
   padding-bottom: 100px !important;
 }
 .standard-page .set-sail::before,
-.premium-page .set-sail::before, 
+.premium-page .set-sail::before,
 .luxurious-page .set-sail::before {
   position: absolute;
   content: "";
@@ -1506,13 +1503,12 @@ footer .box22 h5 {
   background-color: rgba(0, 0, 0, 0.3) !important;
 }
 .standard-page .set-sail .container22,
-.premium-page .set-sail .container22, 
-.luxurious-page .set-sail .container22{
+.premium-page .set-sail .container22,
+.luxurious-page .set-sail .container22 {
   z-index: 1000;
   position: relative;
 }
-.luxurious-page .set-sail .container22و
-.yachts-page .set-sail .container22 {
+.luxurious-page .set-sail .container22و .yachts-page .set-sail .container22 {
   max-width: 1140px !important;
   margin: auto;
 }
@@ -1523,21 +1519,21 @@ footer .box22 h5 {
   color: #c2c2c2;
 }
 .standard-page .set-sail h1,
-.premium-page .set-sail h1, 
+.premium-page .set-sail h1,
 .luxurious-page .set-sail h1,
-.about-page .set-sail h1{
+.about-page .set-sail h1 {
   font-size: 40px;
 }
 .standard-page .set-sail p,
-.premium-page .set-sail p, 
-.luxurious-page .set-sail p{
+.premium-page .set-sail p,
+.luxurious-page .set-sail p {
   max-width: 1140px;
   text-align: center;
   margin: auto;
 }
 .standard-page .set-sail a,
-.premium-page .set-sail a, 
-.luxurious-page .set-sail a{
+.premium-page .set-sail a,
+.luxurious-page .set-sail a {
   margin-top: 20px !important;
   border-left-color: white;
 }
@@ -1547,19 +1543,19 @@ footer .box22 h5 {
   background-color: rgb(0, 12, 97, 0.1);
   margin-bottom: 470px;
 }
-@media (max-width:750px) {
+@media (max-width: 750px) {
   .standard-page header,
-.premium-page header,
-.luxurious-page header {
-  margin-bottom:520px !important;
+  .premium-page header,
+  .luxurious-page header {
+    margin-bottom: 520px !important;
   }
 }
-@media (max-width:1022px) {
+@media (max-width: 1022px) {
   .standard-page header,
-.premium-page header,
-.luxurious-page header {
-  margin-bottom:490px;
-}
+  .premium-page header,
+  .luxurious-page header {
+    margin-bottom: 490px;
+  }
 }
 .landing-standard,
 .landing-premium,
@@ -1574,17 +1570,17 @@ footer .box22 h5 {
   top: 0;
   left: 0;
   width: 100%;
-  height:604.83px;
+  height: 604.83px;
   background-position: center center;
   background-size: cover;
 }
 .landing-standard {
   background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2023/12/Standard-Card-Image-HQ.png.webp");
 }
-.landing-premium  {
+.landing-premium {
   background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2023/12/Premium-Card-Image-HQ.png.webp");
 }
-.luxurious-page .landing-premium  {
+.luxurious-page .landing-premium {
   background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2023/12/Luxury-Card-Image-HQ-2048x973.png.webp");
 }
 .landing-standard::before,
@@ -1602,23 +1598,23 @@ footer .box22 h5 {
 .landing-premium::before {
   opacity: 0.3 !important;
 }
-.landing-standard .text, 
+.landing-standard .text,
 .landing-premium .text,
-.landing-lurxurious .text{
+.landing-lurxurious .text {
   position: relative;
   text-align: center;
   margin-top: -2px;
 }
-.landing-standard .text h1, 
-.landing-premium .text h1, 
-.landing-lurxurious .text h1 { 
+.landing-standard .text h1,
+.landing-premium .text h1,
+.landing-lurxurious .text h1 {
   font-weight: 600;
   font-size: 40px;
   margin-bottom: 17px;
   margin-top: -3px;
   color: white;
 }
-.landing-standard .text p, 
+.landing-standard .text p,
 .landing-premium .text p,
 .landing-lurxurious .text p {
   font-weight: 400;
@@ -1647,7 +1643,7 @@ footer .box22 h5 {
   max-width: 1140px !important;
   margin: auto;
 }
-.standard-page .discover ,
+.standard-page .discover,
 .premium-page .discover,
 .luxurious-page .discover {
   padding-top: 50px;
@@ -1742,15 +1738,15 @@ footer .box22 h5 {
   height: 250px;
   width: 100%;
   border-top-left-radius: 20px;
-  border-top-right-radius:20px ;
+  border-top-right-radius: 20px;
 }
-.card-swiper  {
+.card-swiper {
   padding-bottom: 20px;
   border-radius: 20px;
   max-width: 370px !important;
 }
 .premium-page .card-swiper {
-  width: calc(((100% - 40px) /3)) !important;
+  width: calc(((100% - 40px) / 3)) !important;
   max-width: 363.34px !important;
 }
 .card-swiper > a {
@@ -1758,7 +1754,7 @@ footer .box22 h5 {
 }
 .card-swiper .slick-dots {
   position: relative;
-  transform: translatey(-80px)
+  transform: translatey(-80px);
 }
 .card-swiper .text {
   padding: 15px 10px;
@@ -1769,39 +1765,39 @@ footer .box22 h5 {
   position: relative;
   justify-content: space-between;
 }
-.card-swiper .text .box1  h2 {
+.card-swiper .text .box1 h2 {
   font-size: 20px;
   margin-bottom: 20px;
 }
 .card-swiper:not(:first-child) .text .box1 {
   align-items: end;
 }
-.card-swiper:not(:first-child) .text .box1  h2 {
+.card-swiper:not(:first-child) .text .box1 h2 {
   margin: 6.5px 0 14px !important;
 }
-.card-swiper .text .box1  h2 strong {
+.card-swiper .text .box1 h2 strong {
   letter-spacing: 0 !important;
 }
 .card-swiper .text .box1 span {
   position: absolute;
-    right: -10px;
-    top: -25px;
-    opacity: 0;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    letter-spacing: 0;
-    white-space: nowrap;
-    box-shadow: 4px 4px 8px rgba(0,0,0,.3);
-    text-shadow: 0 -1px 0 #000;
-    background-color: #383838;
-    border-radius: 3px;
-    color: white;
-    max-height: 28px;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
+  right: -10px;
+  top: -25px;
+  opacity: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0;
+  white-space: nowrap;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 -1px 0 #000;
+  background-color: #383838;
+  border-radius: 3px;
+  color: white;
+  max-height: 28px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-    padding: 8px 10px;
-    transition: .5s;
+  padding: 8px 10px;
+  transition: 0.5s;
 }
 .card-swiper .text .box1 span::after {
   content: "";
@@ -1812,20 +1808,20 @@ footer .box22 h5 {
   border: solid 5px;
   border-color: #383838 transparent transparent transparent;
 }
-.card-swiper .text .box1  svg:hover + span{
+.card-swiper .text .box1 svg:hover + span {
   opacity: 1;
   /* transition: all 0.3s; */
   top: -35px;
 }
-.card-swiper .text .box1  svg {
+.card-swiper .text .box1 svg {
   font-size: 31px;
   z-index: 100000;
   color: #848484;
-  fill: #848484 ;
+  fill: #848484;
   margin-right: 15px;
   cursor: pointer;
-} 
-.card-swiper .text .box1  svg.red {
+}
+.card-swiper .text .box1 svg.red {
   color: red !important;
 }
 .card-swiper .text .box2 {
@@ -1845,7 +1841,7 @@ footer .box22 h5 {
   margin-bottom: 0;
   /* margin-bottom: 10px; */
 }
-.card-swiper .text .box3 p  {
+.card-swiper .text .box3 p {
   margin-bottom: 1px;
   margin-top: 10px;
 }
@@ -1855,10 +1851,10 @@ footer .box22 h5 {
 }
 .card-swiper .text .box2 p span,
 .card-swiper .nested-box1 span:first-of-type,
-.card-swiper .nested-box2 span:first-of-type{
+.card-swiper .nested-box2 span:first-of-type {
   font-size: 15px;
   font-weight: 700;
-  font-family: 'montserrat' !important;
+  font-family: "montserrat" !important;
   color: #000 !important;
   margin-right: 3px;
   display: inline-block;
@@ -1874,7 +1870,7 @@ footer .box22 h5 {
 .card-swiper .actions a {
   padding: 10px;
   font-size: 13px;
-  height: 39.50px;
+  height: 39.5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1913,10 +1909,10 @@ footer .box22 h5 {
   background-color: #686868;
   max-width: 96.45px;
 }
-.slick-dots li button:before  {
+.slick-dots li button:before {
   color: #e5e5e5 !important;
   opacity: 1 !important;
-  font-size:8px !important;
+  font-size: 8px !important;
   /* width: 50px !important; */
   /* height: 50px !important; */
 }
@@ -1926,7 +1922,7 @@ footer .box22 h5 {
 .services-page {
   background-image: url("https://poseidonyachtsdubai.com/wp-content/uploads/2024/02/pattern.png.webp") !important;
 }
-.services-page .landing-contact, 
+.services-page .landing-contact,
 .about-page .landing-contact,
 .faq-page .landing-contact {
   position: relative;
@@ -1960,11 +1956,11 @@ footer .box22 h5 {
   position: relative;
 }
 .services-page header,
-.about-page header{
+.about-page header {
   background-color: rgb(0, 12, 97, 0.1);
-  margin-bottom:400px;
+  margin-bottom: 400px;
 }
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .services-page header {
     margin-bottom: 0 !important;
   }
@@ -1973,7 +1969,7 @@ footer .box22 h5 {
   margin-bottom: 420px !important;
 }
 .about-page header {
-  margin-bottom:420px !important;
+  margin-bottom: 420px !important;
 }
 .services-page .selection-text {
   padding-top: 100px !important;
@@ -2010,7 +2006,7 @@ footer .box22 h5 {
   padding-left: 20px;
   height: auto;
   padding-bottom: 30px;
-  background-color: #00101A6B;
+  background-color: #00101a6b;
 }
 .services-page .card .text h3 {
   color: white;
@@ -2078,11 +2074,11 @@ footer .box22 h5 {
 }
 .about-page .about-text .text > p {
   color: #7a7a7a;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   font-weight: 400;
 }
 .about-page .about-text .numbers p {
-  color: #C19E5C00;
+  color: #c19e5c00;
   font-family: "Montserrat", Sans-serif;
   font-weight: 600;
   -webkit-text-stroke-width: 1px;
@@ -2092,12 +2088,12 @@ footer .box22 h5 {
   stroke: white;
   margin-bottom: 0;
 }
-.about-page .about-text .numbers  div.name {
- margin-top: -20px;
- font-size: 19px;
- color: #01cbec;
- font-weight: 600; 
- line-height: 1;
+.about-page .about-text .numbers div.name {
+  margin-top: -20px;
+  font-size: 19px;
+  color: #01cbec;
+  font-weight: 600;
+  line-height: 1;
 }
 .about-page .about-text .numbers {
   display: flex;
@@ -2106,7 +2102,7 @@ footer .box22 h5 {
   padding-left: 30px;
   justify-content: center;
 }
-.about-page .about-text .numbers  > div {
+.about-page .about-text .numbers > div {
   text-align: center;
   width: 40%;
 }
@@ -2129,24 +2125,24 @@ footer .box22 h5 {
   background-position: center center;
   margin-bottom: 20px;
 }
-.about-page .about-text .navigate  p {
+.about-page .about-text .navigate p {
   color: #7a7a7a;
   text-align: center;
   font-weight: 400;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .about-page .about-text {
     flex-direction: column;
   }
-  .about-page .about-text .navigate  p {
+  .about-page .about-text .navigate p {
     margin-left: 20px;
     margin-right: 20px;
   }
   .about-page .about-text .child {
     width: 100% !important;
   }
-  .about-page .about-text h5  {
+  .about-page .about-text h5 {
     font-size: 24px;
     margin: 0 0 0 32px;
     padding: 20px 0 20px 17px;
@@ -2160,7 +2156,7 @@ footer .box22 h5 {
     margin-left: 52px;
     margin-right: 45px;
   }
-  .about-page .about-text .image  {
+  .about-page .about-text .image {
     max-width: 575px;
     margin: auto;
   }
@@ -2203,9 +2199,9 @@ footer .box22 h5 {
   margin: auto;
 }
 /* .premium-page .select-yacht .select-yacht-container { */
-  /* padding-left: 10px; */
+/* padding-left: 10px; */
 /* } */
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .select-yacht .select-yacht-container {
     display: flex;
     gap: 10px;
@@ -2215,16 +2211,28 @@ footer .box22 h5 {
     max-width: calc((100% - 0px) / 3);
     width: calc((100% - 20px) / 3);
   }
-  .standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(4),
-  .standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(5),
+  .standard-page
+    .select-yacht
+    .select-yacht-container
+    .card-swiper:nth-child(4),
+  .standard-page
+    .select-yacht
+    .select-yacht-container
+    .card-swiper:nth-child(5),
   .premium-page .select-yacht .select-yacht-container .card-swiper:last-child,
-  .luxurious-page .select-yacht .select-yacht-container .card-swiper:nth-child(16),
-  .luxurious-page .select-yacht .select-yacht-container .card-swiper:nth-child(17) {
-    width: calc(((100%) /3)) !important;
-    max-width: calc(((100%) /3) + 10px) !important;
+  .luxurious-page
+    .select-yacht
+    .select-yacht-container
+    .card-swiper:nth-child(16),
+  .luxurious-page
+    .select-yacht
+    .select-yacht-container
+    .card-swiper:nth-child(17) {
+    width: calc(((100%) / 3)) !important;
+    max-width: calc(((100%) / 3) + 10px) !important;
   }
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .card-swiper {
     max-width: 100% !important;
     max-height: 500px !important;
@@ -2239,7 +2247,7 @@ footer .box22 h5 {
     max-height: 35.75px;
   }
 }
-@media (min-width:768px) and (max-width:1140px) {
+@media (min-width: 768px) and (max-width: 1140px) {
   .select-yacht .select-yacht-container {
     padding-left: 10px;
   }
@@ -2249,51 +2257,119 @@ footer .box22 h5 {
   }
   .text .box2,
   .text .box3 {
-    opacity: .1;
+    opacity: 0.1;
   }
 }
-.standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(1) .box2,
-.standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(2) .box2,
-.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(9) .box2,
-.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(10) .box2 {
+.standard-page
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(1)
+  .box2,
+.standard-page
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(2)
+  .box2,
+.premium-page
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(9)
+  .box2,
+.premium-page
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(10)
+  .box2 {
   display: none;
 }
-.standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(1) .actions,
-.standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(2) .actions,
-.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(9) .actions,
-.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(10) .actions {
+.standard-page
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(1)
+  .actions,
+.standard-page
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(2)
+  .actions,
+.premium-page
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(9)
+  .actions,
+.premium-page
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(10)
+  .actions {
   margin-top: 7px;
 }
-.standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(1) .box3{
+.standard-page
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(1)
+  .box3 {
   margin-bottom: 25px;
   margin-top: 13px;
 }
-.standard-page .select-yacht .select-yacht-container .card-swiper:nth-child(2) .box3,
-.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(9) .box3,
-.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(10) .box3 {
+.standard-page
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(2)
+  .box3,
+.premium-page
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(9)
+  .box3,
+.premium-page
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(10)
+  .box3 {
   margin-bottom: 20px;
   margin-top: 18px;
 }
-.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(1) .box2 {
+.premium-page
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(1)
+  .box2 {
   margin-top: 4px;
 }
-.premium-page .select-yacht .select-yacht-container .card-swiper:nth-child(1) .box3 {
+.premium-page
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(1)
+  .box3 {
   margin-top: -1px;
   margin-bottom: 7px;
 }
-.luxurious-page .select-yacht-container .card-swiper:not(:nth-child(11)):not(:nth-child(14)):not(:nth-child(17)) .nested-box1,
-.luxurious-page .select-yacht-container .card-swiper:not(:nth-child(11)):not(:nth-child(14)):not(:nth-child(17)) .nested-box2 {
+.luxurious-page
+  .select-yacht-container
+  .card-swiper:not(:nth-child(11)):not(:nth-child(14)):not(:nth-child(17))
+  .nested-box1,
+.luxurious-page
+  .select-yacht-container
+  .card-swiper:not(:nth-child(11)):not(:nth-child(14)):not(:nth-child(17))
+  .nested-box2 {
   display: none;
 }
-.luxurious-page .select-yacht-container .card-swiper:nth-child(14) .nested-box2 {
+.luxurious-page
+  .select-yacht-container
+  .card-swiper:nth-child(14)
+  .nested-box2 {
   display: none;
 }
 .luxurious-page .select-yacht-container .card-swiper:nth-child(11) .nested-box1,
-.luxurious-page .select-yacht-container .card-swiper:nth-child(17) .nested-box1 {
+.luxurious-page
+  .select-yacht-container
+  .card-swiper:nth-child(17)
+  .nested-box1 {
   display: none;
 }
 .luxurious-page .card-swiper:not(:nth-child(1)) .text {
-  padding-top: 9px  !important;
+  padding-top: 9px !important;
 }
 .luxurious-page .card-swiper .actions {
   margin-top: 7px !important;
@@ -2315,7 +2391,7 @@ footer .box22 h5 {
   align-items: baseline;
 }
 .card-swiper .box2 .nested-box1 .line-right,
-.card-swiper .box2 .nested-box2 .line-right{
+.card-swiper .box2 .nested-box2 .line-right {
   width: 2px;
   height: 10px;
   background-color: black;
@@ -2323,7 +2399,7 @@ footer .box22 h5 {
   margin-right: 1px;
 }
 .luxurious-page .card-swiper .box2 .nested-box1 img,
-.luxurious-page .card-swiper .box2 .nested-box2 img{
+.luxurious-page .card-swiper .box2 .nested-box2 img {
   margin-right: 3px;
 }
 .review-swiper {
@@ -2333,11 +2409,25 @@ footer .box22 h5 {
 }
 .review-swiper .review {
   position: relative;
+  display: flex;
+  flex-direction: column;
   color: white;
+  height: 380px;
   padding: 23px;
   margin: 40px;
   max-width: 409.6px;
   background-color: #4e5762 !important;
+}
+.review-swiper .review p {
+  height: 220px;
+  max-height: 220px !important;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+.review-swiper .review span {
+  flex: 1;
+  display: flex;
+  align-items: end;
 }
 @media (max-width: 600px) {
   .review-swiper .review {
@@ -2345,6 +2435,40 @@ footer .box22 h5 {
     margin-bottom: 30px !important;
     max-width: calc(100% - 40px);
   }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .review-swiper .review {
+    margin: 15px !important;
+  }
+}
+.review-swiper *::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+.review-swiper *::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.review-swiper *::-webkit-scrollbar-track:hover {
+  background-color: transparent;
+}
+
+.review-swiper *::-webkit-scrollbar-track:active {
+  background-color: transparent;
+}
+
+.review-swiper *::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #01cbec;
+}
+
+.review-swiper *::-webkit-scrollbar-thumb:hover {
+  background-color: #01cbec;
+}
+
+.review-swiper *::-webkit-scrollbar-thumb:active {
+  background-color: #01cbec;
 }
 .review-swiper .review img {
   border-radius: 50%;
@@ -2388,11 +2512,11 @@ footer .box22 h5 {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-@media (min-width:600px) {
-.custom-dots li:nth-child(3) button,
-.custom-dots li:nth-child(4) button{
-  display: none !important;
-}
+@media (min-width: 600px) {
+  .custom-dots li:nth-child(3) button,
+  .custom-dots li:nth-child(4) button {
+    display: none !important;
+  }
 }
 
 .custom-dots button.active {
@@ -2431,11 +2555,11 @@ footer .box22 h5 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.landing-yacht .location{
+.landing-yacht .location {
   margin-top: 70px;
   display: flex;
 }
-@media (min-width:768px) and (max-width:1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .landing-yacht .yacht-container {
     padding-left: 10px;
     padding-right: 10px;
@@ -2444,7 +2568,7 @@ footer .box22 h5 {
     margin-top: 206px;
   }
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .landing-yacht .yacht-container {
     padding-left: 10px;
     padding-right: 10px;
@@ -2462,7 +2586,7 @@ footer .box22 h5 {
   color: #00f;
   display: inline-block;
   font-weight: 600;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   padding-right: 5px;
   padding-left: 5px;
 }
@@ -2471,7 +2595,7 @@ footer .box22 h5 {
   color: white;
   text-align: center;
   font-family: "Playfair Display", serif;
-  font-size: 32px !important;  
+  font-size: 32px !important;
   font-style: italic;
   font-weight: 600;
   line-height: 1;
@@ -2484,17 +2608,16 @@ footer .box22 h5 {
 .landing-yacht .yachtgallery .slick-slide {
   margin-right: 15px;
   max-height: 100%;
-  width: calc((100% - 60px)/4);
+  width: calc((100% - 60px) / 4);
   margin-right: 15px;
-  max-width: calc((100% - 60px)/4);
+  max-width: calc((100% - 60px) / 4);
 }
-.landing-yacht button.custom-dot, 
-.landing-yacht  .slick-dots li {
+.landing-yacht button.custom-dot,
+.landing-yacht .slick-dots li {
   width: 10px !important;
   height: 10px !important;
 }
-.landing-yacht  .slick-dots li
-.landing-yacht .yachtgallery .slick-slide img {
+.landing-yacht .slick-dots li .landing-yacht .yachtgallery .slick-slide img {
   width: 100%;
   max-width: 100%;
   height: 100%;
@@ -2515,8 +2638,8 @@ footer .box22 h5 {
   padding: 0;
   display: flex;
 }
-@media (max-width:767px) {
-  .yacht-details .container  {
+@media (max-width: 767px) {
+  .yacht-details .container {
     flex-direction: column;
   }
   .yacht-details .container > div {
@@ -2554,7 +2677,7 @@ footer .box22 h5 {
   margin-bottom: 28px;
   font-weight: 600;
 }
-.yacht-details .container .box1 > div{
+.yacht-details .container .box1 > div {
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -2562,20 +2685,20 @@ footer .box22 h5 {
   width: 100%;
 }
 .yacht-details .container .box1 table tr:first-of-type td {
-  background-color: hsla(0,0%,50.2%,.0705882353);
+  background-color: hsla(0, 0%, 50.2%, 0.0705882353);
 }
 .page54ft .yacht-details .container .box1 table tr:nth-child(1) td {
   background-color: transparent !important;
 }
 .page54ft .yacht-details .container .box1 table tr:nth-child(2) td {
-  background-color: hsla(0,0%,50.2%,.0705882353) !important;
+  background-color: hsla(0, 0%, 50.2%, 0.0705882353) !important;
 }
-.page130ft .yacht-details .container .box1 table tr td{ 
-background-color: transparent !important;
+.page130ft .yacht-details .container .box1 table tr td {
+  background-color: transparent !important;
 }
 .page130ft .yacht-details .container .box1 table tr:hover td {
   transition: 0.3s;
-  background-color: hsla(0,0%,50.2%,.0705882353) !important;
+  background-color: hsla(0, 0%, 50.2%, 0.0705882353) !important;
 }
 .yacht-details .container .box1 table tr td {
   color: #fff;
@@ -2586,7 +2709,7 @@ background-color: transparent !important;
   text-align: center;
 }
 .yacht-details .container .box1 table tr:hover td {
-  background-color: hsla(0,0%,50.2%,.0705882353);
+  background-color: hsla(0, 0%, 50.2%, 0.0705882353);
   transition: 0.3s;
 }
 .yacht-details .container .box2 > div {
@@ -2620,7 +2743,7 @@ background-color: transparent !important;
 .yacht-page {
   background-color: #010e1e;
 }
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .yacht-page header {
     background-color: black !important;
   }
@@ -2631,7 +2754,7 @@ background-color: transparent !important;
 .yacht-page .heading {
   padding-left: 10px;
 }
-.yacht-page .heading h3{
+.yacht-page .heading h3 {
   text-align: center;
   color: white;
   font-size: 28px;
@@ -2651,7 +2774,7 @@ background-color: transparent !important;
 .yacht-page .heading2 h1 {
   color: white;
   padding: 10px 0;
-  font-family: "Playfair Display",serif;
+  font-family: "Playfair Display", serif;
   font-size: 50px;
   font-weight: 600;
   max-width: 1140px;
@@ -2669,15 +2792,15 @@ background-color: transparent !important;
   align-items: center;
   cursor: pointer;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .yacht-page .heading2 h1 {
     font-size: 20px;
   }
 }
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .yacht-form {
     margin: auto !important;
-  }  
+  }
 }
 .yacht-form {
   background-color: white;
@@ -2687,7 +2810,7 @@ background-color: transparent !important;
 .yacht-form form {
   padding: 15px 5px;
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .yacht-form form {
     display: flex;
   }
@@ -2702,7 +2825,9 @@ background-color: transparent !important;
   padding-right: 5px;
 }
 .yacht-form form > div {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: solid 1px #fff;
   border-radius: 13px;
   margin-right: 10px;
@@ -2736,11 +2861,14 @@ background-color: transparent !important;
 .yacht-form form > div:last-child {
   border-radius: 13px;
   background-color: #01cbec;
-  margin-bottom: 0;padding: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 .yacht-form form button {
   background-color: #01cbec;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 100%;
   color: #fff;
   min-height: 40px;
@@ -2756,7 +2884,7 @@ background-color: transparent !important;
 .advantages {
   padding: 0 10px;
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .advantages {
     display: none;
   }
@@ -2794,7 +2922,7 @@ background-color: transparent !important;
 .advantage-slider {
   padding: 10px;
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .advantage-slider {
     display: none;
   }
@@ -2842,14 +2970,14 @@ background-color: transparent !important;
 }
 .whats-link p {
   padding: 0px 16px;
-    line-height: 1.6;
-    font-size: 15px;
-    background-color: rgb(37, 211, 102);
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    margin: 0px 10px;
-    order: 0;
-    display: none;
+  line-height: 1.6;
+  font-size: 15px;
+  background-color: rgb(37, 211, 102);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 0px 10px;
+  order: 0;
+  display: none;
 }
 @keyframes whats {
   0% {
@@ -2905,7 +3033,7 @@ background-color: transparent !important;
 .yachts-page .select-yacht-container .card-swiper .actions {
   padding-left: 14px;
 }
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .yachts-page header {
     margin-bottom: 330.5px !important;
   }
@@ -2940,10 +3068,10 @@ background-color: transparent !important;
   text-align: justify;
   /* letter-spacing: 1.5px !important; */
 }
-.yachts-page .contact-container .landing-contact h5  {
+.yachts-page .contact-container .landing-contact h5 {
   font-weight: 600;
 }
-.yachts-page .discover .container22{
+.yachts-page .discover .container22 {
   padding: 0 !important;
 }
 .yachts-page .discover span {
@@ -2970,11 +3098,11 @@ background-color: transparent !important;
 }
 .pagination-yachts .page-number {
   padding: 12px;
-    color: #fff !important;
-    display: inline-block;
-    border: 3px solid #fff;
-    margin-right: 3px;
-    border-radius: 50%;
+  color: #fff !important;
+  display: inline-block;
+  border: 3px solid #fff;
+  margin-right: 3px;
+  border-radius: 50%;
 }
 .yachts-page .set-sail {
   margin-bottom: 100px;
@@ -2983,9 +3111,24 @@ background-color: transparent !important;
 .pagination-yachts span:first-child {
   margin-right: 5px !important;
 }
-.yachts-page.part5 .select-yacht .select-yacht-container  .card-swiper:nth-child(2) .box2 .nested-box1,
-.yachts-page.part5 .select-yacht .select-yacht-container  .card-swiper:nth-child(5) .box2 .nested-box2,
-.yachts-page.part6 .select-yacht .select-yacht-container  .card-swiper:nth-child(2) .box2 .nested-box1 {
+.yachts-page.part5
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(2)
+  .box2
+  .nested-box1,
+.yachts-page.part5
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(5)
+  .box2
+  .nested-box2,
+.yachts-page.part6
+  .select-yacht
+  .select-yacht-container
+  .card-swiper:nth-child(2)
+  .box2
+  .nested-box1 {
   display: none !important;
 }
 .experience {
@@ -3003,7 +3146,7 @@ background-color: transparent !important;
   flex-shrink: 1;
   align-self: auto;
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .experience .container {
     flex-direction: column;
     width: 97% !important;
@@ -3022,7 +3165,7 @@ background-color: transparent !important;
     padding: 0 !important;
     width: 87% !important;
   }
-  .experience .section-img .text-box  {
+  .experience .section-img .text-box {
     left: 0px !important;
     top: 50% !important;
     width: 268.266px !important;
@@ -3039,7 +3182,7 @@ background-color: transparent !important;
     display: block;
   }
 }
-@media (min-width:768px) and (max-width:1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .experience .section-img .text-box {
     left: 71px !important;
     top: 650px !important;
@@ -3049,7 +3192,7 @@ background-color: transparent !important;
     display: flex;
     flex-direction: column;
   }
-  .experience .container  {
+  .experience .container {
     margin-left: 0 !important;
     margin-right: auto !important;
   }
@@ -3077,7 +3220,7 @@ background-color: transparent !important;
   z-index: 10;
   top: 667px;
 }
-.experience .section-img .text-box  .number {
+.experience .section-img .text-box .number {
   display: flex;
   justify-content: center;
 }
@@ -3087,7 +3230,7 @@ background-color: transparent !important;
   line-height: 1;
   text-align: center;
   font-size: 69px;
-  font-family: "Montserrat",Sans-serif;
+  font-family: "Montserrat", Sans-serif;
 }
 .experience .section-img .text-box p {
   font-weight: 600;
@@ -3096,14 +3239,13 @@ background-color: transparent !important;
   line-height: 2.5;
   font-size: 19px;
   margin-bottom: 0;
-  font-family: "Montserrat",Sans-serif;
+  font-family: "Montserrat", Sans-serif;
 }
 .experience .content h5 {
-  color:#01cbec;
+  color: #01cbec;
   font-family: "Playfair Display", Sans-serif;
   font-weight: 600;
   font-style: italic;
-
 }
 .experience .content h3 {
   color: white;
@@ -3113,7 +3255,7 @@ background-color: transparent !important;
   letter-spacing: 1.2px;
   line-height: 1;
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .experience .content h5 {
     margin-bottom: 20px !important;
   }
@@ -3123,7 +3265,7 @@ background-color: transparent !important;
   margin-bottom: 0;
   font-weight: 400;
   letter-spacing: 1.2px;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .experience .content .box {
   display: flex;
@@ -3150,7 +3292,7 @@ background-color: transparent !important;
   padding: 0 15px;
   color: white;
   font-weight: 400;
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -3233,7 +3375,7 @@ background-color: transparent !important;
   background-color: #00ccff;
   transition: 0.3s;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .error-page header {
     background-color: #010812;
   }
@@ -3242,7 +3384,7 @@ background-color: transparent !important;
   }
   .error-page .landing-error .container h1:first-child {
     font-size: 69px !important;
-  } 
+  }
   .error-page .landing-error .container h1:nth-child(2) {
     font-size: 22px !important;
     margin-top: 20px;
@@ -3251,7 +3393,7 @@ background-color: transparent !important;
     font-size: 12px !important;
   }
 }
-@media (min-width:768px) and (max-width:1007px) {
+@media (min-width: 768px) and (max-width: 1007px) {
   .error-page .landing-error {
     top: 111px !important;
   }
@@ -3259,7 +3401,7 @@ background-color: transparent !important;
     background-color: #010812;
   }
 }
-.faq-page .faq-content  {
+.faq-page .faq-content {
   margin-bottom: 120px;
   padding: 0 10px;
 }
@@ -3291,7 +3433,7 @@ background-color: transparent !important;
   text-align: justify;
   margin-bottom: 35px;
 }
-.faq-page  .margin {
+.faq-page .margin {
   width: 100%;
   height: 120px;
 }
@@ -3307,7 +3449,7 @@ background-color: transparent !important;
 }
 .faq-page .faq-content .ques {
   padding: 15px 20px;
-  background-color: #7A7A7AB3;
+  background-color: #7a7a7ab3;
   font-weight: 700;
   line-height: 1;
   cursor: pointer;
@@ -3341,7 +3483,7 @@ background-color: transparent !important;
 .faq-page {
   background-color: #010e1e;
 }
-@media (max-width:1005px) {
+@media (max-width: 1005px) {
   .faq-page header {
     margin-bottom: 0 !important;
   }
@@ -3352,14 +3494,14 @@ background-color: transparent !important;
     height: 545.8px !important;
   }
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .faq-page .container {
     flex-direction: column;
   }
   .faq-page .container {
     padding: 0;
   }
-  .faq-page .container  > div {
+  .faq-page .container > div {
     width: 100% !important;
   }
   .faq-page .faq-content .ans {
@@ -3367,12 +3509,12 @@ background-color: transparent !important;
   }
 }
 .ans-colsed {
-  animation: height-up .4s linear forwards;
+  animation: height-up 0.4s linear forwards;
   overflow: hidden !important;
 }
 @keyframes height-up {
   0% {
-    height: auto ;
+    height: auto;
   }
   100% {
     height: 0;
